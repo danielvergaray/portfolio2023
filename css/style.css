@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* VERSION MOBILE --------  */
+@media (max-width: 576px) {
+  .header-info-portfolio {
+    display: none; }
+  header {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 10px 0; }
+    header .header-nombre-portfolio {
+      grid-column: 1; }
+    header .header-menuHamburguesa-container {
+      grid-column: 2;
+      text-align: center; }
+  main .main-principal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px 0; }
+    main .main-principal .main-foto {
+      padding: 20px 0; }
+      main .main-principal .main-foto img {
+        width: 60%; }
+  main .main-secundaria {
+    text-align: center;
+    padding-bottom: 20px; }
+    main .main-secundaria .redes i {
+      font-size: 20px; }
+  .sobreMi-container {
+    text-align: center; }
+    .sobreMi-container img {
+      padding: 20px 0;
+      width: 60%; }
+    .sobreMi-container p {
+      padding: 20px 0; }
+    .sobreMi-container h2 {
+      font-size: 20px;
+      position: relative; }
+      .sobreMi-container h2::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        /* Ajusta esto para controlar la posición vertical del subrayado */
+        transform: translateX(-50%);
+        width: 70px;
+        height: 2px;
+        /* Ajusta esto para controlar el grosor del subrayado */
+        background-color: #000;
+        /* Cambia esto para cambiar el color del subrayado */
+        left: 50%; }
+  .portfolio-container {
+    text-align: center; }
+    .portfolio-container h2 {
+      font-size: 20px;
+      position: relative; }
+      .portfolio-container h2::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        /* Ajusta esto para controlar la posición vertical del subrayado */
+        transform: translateX(-50%);
+        width: 70px;
+        height: 2px;
+        /* Ajusta esto para controlar el grosor del subrayado */
+        background-color: #000;
+        /* Cambia esto para cambiar el color del subrayado */
+        left: 50%;
+        /*  */ }
+    .portfolio-container .proyectos-container {
+      padding: 20px 0px; }
+      .portfolio-container .proyectos-container .proyectos img {
+        width: 60%; }
+  .contacto-container {
+    text-align: center; }
+    .contacto-container h2 {
+      font-size: 20px;
+      position: relative; }
+      .contacto-container h2::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        /* Ajusta esto para controlar la posición vertical del subrayado */
+        transform: translateX(-50%);
+        width: 70px;
+        height: 2px;
+        /* Ajusta esto para controlar el grosor del subrayado */
+        background-color: #000;
+        /* Cambia esto para cambiar el color del subrayado */
+        left: 50%; }
+    .contacto-container .redes {
+      padding: 20px 0; }
+      .contacto-container .redes i {
+        font-size: 20px; } }
+
+* {
+  padding: 0px 5px;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+.propiedades-subrayado-titulos {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  /* Ajusta esto para controlar la posición vertical del subrayado */
+  left: 42.5%;
+  width: 60px;
+  height: 2px;
+  /* Ajusta esto para controlar el grosor del subrayado */
+  background-color: #000;
+  /* Cambia esto para cambiar el color del subrayado */
+  margin: auto; }

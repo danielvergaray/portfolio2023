@@ -1,0 +1,12 @@
+// EXTEND //
+
+.propiedades-subrayado-titulos {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Ajusta esto para controlar la posición vertical del subrayado */
+  left: 42.5%;
+  width: 60px;
+  height: 2px; /* Ajusta esto para controlar el grosor del subrayado */
+  background-color: #000; /* Cambia esto para cambiar el color del subrayado */
+  margin: auto;
+}

@@ -1,0 +1,130 @@
+/* VERSION MOBILE --------  */
+
+@media (max-width: 576px) {
+  .header-info-portfolio {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 10px 0;
+
+    .header-nombre-portfolio {
+      grid-column: 1;
+    }
+    .header-menuHamburguesa-container {
+      grid-column: 2;
+      text-align: center;
+    }
+  }
+  main {
+    .main-principal {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px 10px 0;
+
+      .main-foto {
+        padding: 20px 0;
+        img {
+          width: 60%;
+        }
+      }
+    }
+    .main-secundaria {
+      text-align: center;
+      padding-bottom: 20px;
+
+      .redes {
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .sobreMi-container {
+    text-align: center;
+
+    img {
+      padding: 20px 0;
+      width: 60%;
+    }
+    p {
+      padding: 20px 0;
+    }
+    h2 {
+      font-size: 20px;
+      //padding-bottom: 20px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px; /* Ajusta esto para controlar la posición vertical del subrayado */
+        transform: translateX(-50%);
+        width: 70px;
+        height: 2px; /* Ajusta esto para controlar el grosor del subrayado */
+        background-color: #000; /* Cambia esto para cambiar el color del subrayado */
+        left: 50%;
+      }
+    }
+  }
+  .portfolio-container {
+    text-align: center;
+
+    h2 {
+      font-size: 20px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px; /* Ajusta esto para controlar la posición vertical del subrayado */
+        transform: translateX(-50%);
+        width: 70px;
+        height: 2px; /* Ajusta esto para controlar el grosor del subrayado */
+        background-color: #000; /* Cambia esto para cambiar el color del subrayado */
+        left: 50%; /*  */
+      }
+    }
+    .proyectos-container {
+        padding: 20px 0px;
+
+        .proyectos{
+            img{
+                width: 60%;
+            }
+        }
+      }
+
+
+  }
+  
+  .contacto-container {
+    text-align: center;
+
+    h2 {
+      font-size: 20px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px; /* Ajusta esto para controlar la posición vertical del subrayado */
+        transform: translateX(-50%);
+        width: 70px;
+        height: 2px; /* Ajusta esto para controlar el grosor del subrayado */
+        background-color: #000; /* Cambia esto para cambiar el color del subrayado */
+        left: 50%;
+      }
+    }
+    .redes{
+        padding: 20px 0;
+
+        i{
+            font-size: 20px;
+        }
+    }
+  }
+}
