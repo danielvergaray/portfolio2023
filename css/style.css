@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
-  .header-info-portfolio {
+  .header-info-portfolio,
+  .proyecto-pig-game {
     display: none; }
   header {
     display: grid;
@@ -26,17 +27,27 @@
     padding-bottom: 20px; }
     main .main-secundaria .redes i {
       font-size: 20px; }
-  .sobreMi-container {
+  .estudios ul {
+    padding: 10px 0;
+    list-style: none; }
+    .estudios ul p {
+      padding: 10px 60px; }
+    .estudios ul i {
+      padding-right: 15px; }
+    .estudios ul li {
+      text-align: left; }
+  .sobreMi-container, .estudios {
     text-align: center; }
-    .sobreMi-container img {
-      padding: 20px 0;
+    .sobreMi-container img, .estudios img {
+      padding: 30px 0;
       width: 60%; }
-    .sobreMi-container p {
-      padding: 20px 0; }
-    .sobreMi-container h2 {
+    .sobreMi-container p, .estudios p {
+      padding: 20px 50px;
+      text-align: justify; }
+    .sobreMi-container h2, .estudios h2 {
       font-size: 20px;
       position: relative; }
-      .sobreMi-container h2::after {
+      .sobreMi-container h2::after, .estudios h2::after {
         content: "";
         position: absolute;
         bottom: -5px;
@@ -67,9 +78,20 @@
         left: 50%;
         /*  */ }
     .portfolio-container .proyectos-container {
-      padding: 20px 0px; }
-      .portfolio-container .proyectos-container .proyectos img {
-        width: 60%; }
+      padding: 0px 0px;
+      /* .proyectos{
+            
+        } */ }
+    .portfolio-container p {
+      padding: 20px 50px;
+      text-align: justify; }
+    .portfolio-container h3 {
+      padding: 20px 50px; }
+    .portfolio-container a {
+      text-decoration: none;
+      color: black; }
+    .portfolio-container img {
+      width: 60%; }
   .contacto-container {
     text-align: center; }
     .contacto-container h2 {
@@ -88,9 +110,11 @@
         /* Cambia esto para cambiar el color del subrayado */
         left: 50%; }
     .contacto-container .redes {
-      padding: 20px 0; }
+      padding: 40px 0; }
       .contacto-container .redes i {
-        font-size: 20px; } }
+        font-size: 20px; }
+      .contacto-container .redes p {
+        padding: 10px 20px; } }
 
 * {
   padding: 0px 5px;
