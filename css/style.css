@@ -7,117 +7,165 @@
   header {
     display: grid;
     grid-template-columns: 80% 20%;
-    padding: 10px 0; }
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    z-index: 100;
+    width: 100%; }
+    header p {
+      padding-left: 10px; }
     header .header-nombre-portfolio {
       grid-column: 1; }
     header .header-menuHamburguesa-container {
       grid-column: 2;
       text-align: center; }
-  main .main-principal {
+  .header-info-mobile {
+    z-index: 100;
+    background-color: black;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 20px 10px 0; }
-    main .main-principal .main-foto {
-      padding: 20px 0; }
-      main .main-principal .main-foto img {
+    position: fixed;
+    top: 39px;
+    color: white; }
+    .header-info-mobile ul {
+      list-style: none;
+      text-align: center;
+      line-height: 50px;
+      height: 100vh;
+      font-size: 20px;
+      margin: 0;
+      /* Elimina el margen por defecto del ul */
+      padding: 0;
+      /* Elimina el padding por defecto del ul */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* Centra verticalmente los elementos */
+      align-items: center;
+      /* Centra horizontalmente los elementos */ }
+      .header-info-mobile ul a {
+        color: white;
+        text-decoration: none; }
+  .oculto {
+    display: none; }
+  .todo-el-contenido {
+    background-color: wheat; }
+    .todo-el-contenido main {
+      position: relative;
+      z-index: 1; }
+      .todo-el-contenido main .main-principal {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px 0; }
+        .todo-el-contenido main .main-principal .main-foto {
+          padding: 20px 0; }
+          .todo-el-contenido main .main-principal .main-foto img {
+            width: 60%; }
+      .todo-el-contenido main .main-secundaria {
+        text-align: center;
+        padding-bottom: 20px; }
+        .todo-el-contenido main .main-secundaria .redes i {
+          font-size: 20px; }
+    .todo-el-contenido .estudios ul {
+      padding: 10px 0;
+      list-style: none; }
+      .todo-el-contenido .estudios ul p {
+        padding: 10px 60px; }
+      .todo-el-contenido .estudios ul i {
+        padding-right: 15px; }
+      .todo-el-contenido .estudios ul li {
+        text-align: left; }
+    .todo-el-contenido .sobreMi-container,
+    .todo-el-contenido .estudios {
+      text-align: center; }
+      .todo-el-contenido .sobreMi-container img,
+      .todo-el-contenido .estudios img {
+        padding: 30px 0;
         width: 60%; }
-  main .main-secundaria {
-    text-align: center;
-    padding-bottom: 20px; }
-    main .main-secundaria .redes i {
-      font-size: 20px; }
-  .estudios ul {
-    padding: 10px 0;
-    list-style: none; }
-    .estudios ul p {
-      padding: 10px 60px; }
-    .estudios ul i {
-      padding-right: 15px; }
-    .estudios ul li {
-      text-align: left; }
-  .sobreMi-container, .estudios {
-    text-align: center; }
-    .sobreMi-container img, .estudios img {
-      padding: 30px 0;
-      width: 60%; }
-    .sobreMi-container p, .estudios p {
-      padding: 20px 50px;
-      text-align: justify; }
-    .sobreMi-container h2, .estudios h2 {
-      font-size: 20px;
-      position: relative; }
-      .sobreMi-container h2::after, .estudios h2::after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        /* Ajusta esto para controlar la posición vertical del subrayado */
-        transform: translateX(-50%);
-        width: 70px;
-        height: 2px;
-        /* Ajusta esto para controlar el grosor del subrayado */
-        background-color: #000;
-        /* Cambia esto para cambiar el color del subrayado */
-        left: 50%; }
-  .portfolio-container {
-    text-align: center; }
-    .portfolio-container h2 {
-      font-size: 20px;
-      position: relative; }
-      .portfolio-container h2::after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        /* Ajusta esto para controlar la posición vertical del subrayado */
-        transform: translateX(-50%);
-        width: 70px;
-        height: 2px;
-        /* Ajusta esto para controlar el grosor del subrayado */
-        background-color: #000;
-        /* Cambia esto para cambiar el color del subrayado */
-        left: 50%;
-        /*  */ }
-    .portfolio-container .proyectos-container {
-      padding: 0px 0px;
-      /* .proyectos{
-            
-        } */ }
-    .portfolio-container p {
-      padding: 20px 50px;
-      text-align: justify; }
-    .portfolio-container h3 {
-      padding: 20px 50px; }
-    .portfolio-container a {
-      text-decoration: none;
-      color: black; }
-    .portfolio-container img {
-      width: 60%; }
-  .contacto-container {
-    text-align: center; }
-    .contacto-container h2 {
-      font-size: 20px;
-      position: relative; }
-      .contacto-container h2::after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        /* Ajusta esto para controlar la posición vertical del subrayado */
-        transform: translateX(-50%);
-        width: 70px;
-        height: 2px;
-        /* Ajusta esto para controlar el grosor del subrayado */
-        background-color: #000;
-        /* Cambia esto para cambiar el color del subrayado */
-        left: 50%; }
-    .contacto-container .redes {
-      padding: 40px 0; }
-      .contacto-container .redes i {
-        font-size: 20px; }
-      .contacto-container .redes p {
-        padding: 10px 20px; } }
+      .todo-el-contenido .sobreMi-container p,
+      .todo-el-contenido .estudios p {
+        padding: 20px 50px;
+        text-align: justify; }
+      .todo-el-contenido .sobreMi-container h2,
+      .todo-el-contenido .estudios h2 {
+        font-size: 20px;
+        position: relative; }
+        .todo-el-contenido .sobreMi-container h2::after,
+        .todo-el-contenido .estudios h2::after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          /* Ajusta esto para controlar la posición vertical del subrayado */
+          transform: translateX(-50%);
+          width: 70px;
+          height: 2px;
+          /* Ajusta esto para controlar el grosor del subrayado */
+          background-color: #000;
+          /* Cambia esto para cambiar el color del subrayado */
+          left: 50%; }
+    .todo-el-contenido .portfolio-container {
+      text-align: center; }
+      .todo-el-contenido .portfolio-container h2 {
+        font-size: 20px;
+        position: relative; }
+        .todo-el-contenido .portfolio-container h2::after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          /* Ajusta esto para controlar la posición vertical del subrayado */
+          transform: translateX(-50%);
+          width: 70px;
+          height: 2px;
+          /* Ajusta esto para controlar el grosor del subrayado */
+          background-color: #000;
+          /* Cambia esto para cambiar el color del subrayado */
+          left: 50%;
+          /*  */ }
+      .todo-el-contenido .portfolio-container .proyectos-container {
+        padding: 0px 0px;
+        /* .proyectos{
+              
+          } */ }
+      .todo-el-contenido .portfolio-container p {
+        padding: 20px 50px;
+        text-align: justify; }
+      .todo-el-contenido .portfolio-container h3 {
+        padding: 20px 50px; }
+      .todo-el-contenido .portfolio-container a {
+        text-decoration: none;
+        color: black; }
+      .todo-el-contenido .portfolio-container img {
+        width: 60%; }
+    .todo-el-contenido .contacto-container {
+      text-align: center; }
+      .todo-el-contenido .contacto-container h2 {
+        font-size: 20px;
+        position: relative; }
+        .todo-el-contenido .contacto-container h2::after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          /* Ajusta esto para controlar la posición vertical del subrayado */
+          transform: translateX(-50%);
+          width: 70px;
+          height: 2px;
+          /* Ajusta esto para controlar el grosor del subrayado */
+          background-color: #000;
+          /* Cambia esto para cambiar el color del subrayado */
+          left: 50%; }
+      .todo-el-contenido .contacto-container .redes {
+        padding: 40px 0; }
+        .todo-el-contenido .contacto-container .redes i {
+          font-size: 20px; }
+        .todo-el-contenido .contacto-container .redes p {
+          padding: 10px 20px; } }
 
 * {
-  padding: 0px 5px;
+  padding: 0;
   box-sizing: border-box;
   margin: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }

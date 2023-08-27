@@ -20,6 +20,7 @@
     <header>
       <div class="header-nombre-portfolio">
         <p>Daniel Vergaray</p>
+        
       </div>
       <div class="header-info-portfolio">
         <ul>
@@ -28,146 +29,149 @@
           <li>contacto</li>
         </ul>
       </div>
-      <!-- <div class="header-info-mobile">
-        <ul>
-          <li>sobre mi</li>
-          <li>portfolio</li>
-          <li>contacto</li>
-        </ul>
-      </div> -->
-      <div class="header-menuHamburguesa-container">
+
+      <div class="header-menuHamburguesa-container" id="menuHamburguesaBtn">
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
-    <main>
-      <section class="main-principal">
-        <div class="main-titulo-contenedor">
-          <h1>¡Hola! Soy Daniel, Jr. Frontend Dev</h1>
-        </div>
-        <div class="main-foto">
-          <img src="./imagenes/yo-cv.jpeg" alt="foto-de-perfil" />
-        </div>
-      </section>
-      <section class="main-secundaria">
-        <div class="redes">
-          <a href=""><i class="fa-brands fa-linkedin"></i></a>
-          <a href=""><i class="fa-brands fa-square-github"></i></a>
-        </div>
-      </section>
-    </main>
-    <section class="sobreMi-container">
-      <h2 class="animate__animated animate__fadeIn">Sobre mi</h2>
-      <img
-        src="./imagenes/yo-cv.jpeg"
-        alt="foto-de-perfil"
-        class="animate__animated animate__bounce"
-      />
-      <h3>Soy Daniel</h3>
-      <p data-aos="fade-up">
-        Una persona trabajadora, constante y dedicada, considero que más
-        importante que el talento es la dedicación y convicción de querer
-        alcanzar un objetivo. Creo firmemente que el trabajo en equipo es la
-        mejor forma de llevar a cabo un proyecto. Sin embargo, puedo trabajar de
-        manera independiente también. Para finalizar, considero que el
-        crecimiento individual se traduce en el crecimiento de la empresa en sí.
-      </p>
-    </section>
-    <section class="estudios">
-      <h2 class="animate__animated animate__fadeIn">Estudios</h2>
-      <p data-aos="fade-up">
-        Egresado de la carrera de Ingeniería Civil en el año 2017 con
-        experiencia en coordinación de proyectos y manejo de personal. Con más
-        de 01 año llevando estudios de programación y desarrollo web.
-      </p>
-      <h3>Cursos y especializaciones</h3>
-      <ul data-aos="flip-left">
-        <li><i class="fa-solid fa-check"></i>Desarrollo web (CoderHouse)</li>
-        <p>
-          08 semanas en donde se desarrollaron temas como Html5, Css3, Sass,
-          Bootstrap, entre otros.
+  
+    <div class="header-info-mobile" id="menuDesplegable" >
+      <ul id="menuHamburguesaId"></ul>
+      
+    </div>
+    <section id="todoElContenido" class="todo-el-contenido">
+      <main>
+        <section class="main-principal">
+          <div class="main-titulo-contenedor">
+            <h1>¡Hola! Soy Daniel, Jr. Frontend Dev</h1>
+          </div>
+          <div class="main-foto">
+            <img src="./imagenes/yo-cv.jpeg" alt="foto-de-perfil" />
+          </div>
+        </section>
+        <section class="main-secundaria">
+          <div class="redes">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-square-github"></i></a>
+          </div>
+        </section>
+      </main>
+      <section class="sobreMi-container" id="sobreMi">
+        <h2 class="animate__animated animate__fadeIn">Sobre mi</h2>
+        <img
+          src="./imagenes/yo-cv.jpeg"
+          alt="foto-de-perfil"
+          class="animate__animated animate__bounce"
+        />
+        <h3>Soy Daniel</h3>
+        <p data-aos="fade-up">
+          Una persona trabajadora, constante y dedicada, considero que más
+          importante que el talento es la dedicación y convicción de querer
+          alcanzar un objetivo. Creo firmemente que el trabajo en equipo es la
+          mejor forma de llevar a cabo un proyecto. Sin embargo, puedo trabajar de
+          manera independiente también. Para finalizar, considero que el
+          crecimiento individual se traduce en el crecimiento de la empresa en sí.
         </p>
-
-        <li><i class="fa-solid fa-check"></i>javaScript (CoderHouse)</li>
-        <p>08 semanas en donde se desarrollaron lógica de javaScript.</p>
-
-        <li><i class="fa-solid fa-check"></i>React (CoderHouse)</li>
-        <p>Cursando actualmente (08 semanas).</p>
-
-        <li><i class="fa-solid fa-check"></i>WordPress</li>
-        <p>Proxímamente.</p>
-
-        <li><i class="fa-solid fa-check"></i>Vue js</li>
-        <p>Proxímamente.</p>
-      </ul>
-    </section>
-    <section class="portfolio-container" data-aos="fade-up">
-      <h2>Portfolio</h2>
-      <div class="proyectos-container">
-        <div class="proyectos">
-          <a href="https://danielvergaray.github.io/pagina-web-mrSnack/"
-            ><h3>Web Mr Snack</h3>
-            <img src="./imagenes/web-mr-snack.jpeg" alt="web-mr-snack" />
-          </a>
+      </section>
+      <section class="estudios" id="estudiosId">
+        <h2 class="animate__animated animate__fadeIn">Estudios</h2>
+        <p data-aos="fade-up">
+          Egresado de la carrera de Ingeniería Civil en el año 2017 con
+          experiencia en coordinación de proyectos y manejo de personal. Con más
+          de 01 año llevando estudios de programación y desarrollo web.
+        </p>
+        <h3>Cursos y especializaciones</h3>
+        <ul data-aos="flip-left">
+          <li><i class="fa-solid fa-check"></i>Desarrollo web (CoderHouse)</li>
           <p>
-            Este proyecto realizado para un emprendimiento de snacks. Fue
-            llevado a cabo usando Html5 y Css3, ademas se implementaron
-            estategias SEO, Bootstrap y Sass, se realizaron versiones desktop y
-            mobile.
+            08 semanas en donde se desarrollaron temas como Html5, Css3, Sass,
+            Bootstrap, entre otros.
           </p>
+  
+          <li><i class="fa-solid fa-check"></i>javaScript (CoderHouse)</li>
+          <p>08 semanas en donde se desarrollaron lógica de javaScript.</p>
+  
+          <li><i class="fa-solid fa-check"></i>React (CoderHouse)</li>
+          <p>Cursando actualmente (08 semanas).</p>
+  
+          <li><i class="fa-solid fa-check"></i>WordPress</li>
+          <p>Proxímamente.</p>
+  
+          <li><i class="fa-solid fa-check"></i>Vue js</li>
+          <p>Proxímamente.</p>
+        </ul>
+      </section>
+      <section id="portfolioId" class="portfolio-container"  data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <div class="proyectos-container">
+          <div class="proyectos">
+            <a href="https://danielvergaray.github.io/pagina-web-mrSnack/"
+              ><h3>Web Mr Snack</h3>
+              <img src="./imagenes/web-mr-snack.jpeg" alt="web-mr-snack" />
+            </a>
+            <p>
+              Este proyecto realizado para un emprendimiento de snacks. Fue
+              llevado a cabo usando Html5 y Css3, ademas se implementaron
+              estategias SEO, Bootstrap y Sass, se realizaron versiones desktop y
+              mobile.
+            </p>
+          </div>
+          <div class="proyectos" data-aos="fade-up">
+            <a
+              href="https://danielvergaray.github.io/entregaFinal_ecommerce/index.html"
+              ><h3>Ecommerce Mr. Snack</h3>
+              <img src="./imagenes/ecommerce.jpeg" alt="Ecommerce-mr-snack" />
+            </a>
+            <p>
+              Este proyecto consiste en un Ecommerce creado para el emprendimiento
+              Mr. Snack. Fue Ha sido llevado utilizando javaScript, creando los
+              productos del emprendimiento de manera dinamica pudiendo filtrar los
+              proudctos por categoria y buscarlos por su nombre, se realizaron
+              versiones desktop y mobile.
+            </p>
+          </div>
+          <div class="proyectos" data-aos="fade-up">
+            <a href="https://danielvergaray.github.io/AdivinaElNumero_juego/"
+              ><h3>Juego: Adivina el Numero</h3>
+              <img
+                src="./imagenes/adivinaElNumero.jpeg"
+                alt="juego-AdivinaElNumero"
+              />
+            </a>
+            <p>
+              Este proyecto consiste en un juego donde se genera un numero al azar
+              y el usuario debe adivinarlo, contando con pistas que se muestran de
+              acuerdo al valor introducido por el usuario. Fue realizado usando
+              javaScript.
+            </p>
+          </div>
+          <div class="proyectos proyecto-pig-game">
+            <h3>Proyecto 4</h3>
+          </div>
         </div>
-        <div class="proyectos" data-aos="fade-left">
+      </section>
+      <section id="contactoId" class="contacto-container" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <div class="redes">
+          <a href="www.linkedin.com/in/daniel-vergaray"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
           <a
-            href="https://danielvergaray.github.io/entregaFinal_ecommerce/index.html"
-            ><h3>Ecommerce Mr. Snack</h3>
-            <img src="./imagenes/ecommerce.jpeg" alt="Ecommerce-mr-snack" />
-          </a>
-          <p>
-            Este proyecto consiste en un Ecommerce creado para el emprendimiento
-            Mr. Snack. Fue Ha sido llevado utilizando javaScript, creando los
-            productos del emprendimiento de manera dinamica pudiendo filtrar los
-            proudctos por categoria y buscarlos por su nombre, se realizaron
-            versiones desktop y mobile.
-          </p>
+            href="https://github.com/danielvergaray?tab=repositories&q=&type=public&language=&sort="
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
+          <a href="https://wa.me/51950011434"
+            ><i class="fa-brands fa-square-whatsapp"></i
+          ></a>
+          <p>danielvergarayescobar@gmail.com</p>
         </div>
-        <div class="proyectos" data-aos="fade-up-right">
-          <a href="https://danielvergaray.github.io/AdivinaElNumero_juego/"
-            ><h3>Juego: Adivina el Numero</h3>
-            <img
-              src="./imagenes/adivinaElNumero.jpeg"
-              alt="juego-AdivinaElNumero"
-            />
-          </a>
-          <p>
-            Este proyecto consiste en un juego donde se genera un numero al azar
-            y el usuario debe adivinarlo, contando con pistas que se muestran de
-            acuerdo al valor introducido por el usuario. Fue realizado usando
-            javaScript.
-          </p>
-        </div>
-        <div class="proyectos proyecto-pig-game">
-          <h3>Proyecto 4</h3>
-        </div>
-      </div>
+      </section>
     </section>
-    <section class="contacto-container" data-aos="fade-up">
-      <h2>Contacto</h2>
-      <div class="redes">
-        <a href="www.linkedin.com/in/daniel-vergaray"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a
-          href="https://github.com/danielvergaray?tab=repositories&q=&type=public&language=&sort="
-          ><i class="fa-brands fa-square-github"></i
-        ></a>
-        <a href="https://wa.me/51950011434"
-          ><i class="fa-brands fa-square-whatsapp"></i
-        ></a>
-        <p>danielvergarayescobar@gmail.com</p>
-      </div>
-    </section>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="./javaScript/script.js"></script>
   </body>
 </html>
