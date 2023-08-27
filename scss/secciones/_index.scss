@@ -94,14 +94,24 @@
       ul {
         padding: 10px 0;
         list-style: none;
+        .titulo-instituto{
+          position: relative;
+          top: -15px;
+          padding-left: 90px;
+          text-decoration: underline;
+        }
         p {
-          padding: 10px 60px;
+          padding: 10px 90px;
+          position: relative;
+          top: -15px;
         }
         i {
           padding-right: 15px;
         }
         li {
           text-align: left;
+          padding: 10px 60px;
+          
         }
       }
     }
@@ -115,7 +125,7 @@
       }
       p {
         padding: 20px 50px;
-        text-align: justify;
+        text-align: left;
       }
       h2 {
         font-size: 20px;
@@ -161,7 +171,7 @@
       }
       p {
         padding: 20px 50px;
-        text-align: justify;
+        text-align: left;
       }
       h3 {
         padding: 20px 50px;

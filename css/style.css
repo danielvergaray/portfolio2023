@@ -73,12 +73,20 @@
     .todo-el-contenido .estudios ul {
       padding: 10px 0;
       list-style: none; }
+      .todo-el-contenido .estudios ul .titulo-instituto {
+        position: relative;
+        top: -15px;
+        padding-left: 90px;
+        text-decoration: underline; }
       .todo-el-contenido .estudios ul p {
-        padding: 10px 60px; }
+        padding: 10px 90px;
+        position: relative;
+        top: -15px; }
       .todo-el-contenido .estudios ul i {
         padding-right: 15px; }
       .todo-el-contenido .estudios ul li {
-        text-align: left; }
+        text-align: left;
+        padding: 10px 60px; }
     .todo-el-contenido .sobreMi-container,
     .todo-el-contenido .estudios {
       text-align: center; }
@@ -89,7 +97,7 @@
       .todo-el-contenido .sobreMi-container p,
       .todo-el-contenido .estudios p {
         padding: 20px 50px;
-        text-align: justify; }
+        text-align: left; }
       .todo-el-contenido .sobreMi-container h2,
       .todo-el-contenido .estudios h2 {
         font-size: 20px;
@@ -132,7 +140,7 @@
           } */ }
       .todo-el-contenido .portfolio-container p {
         padding: 20px 50px;
-        text-align: justify; }
+        text-align: left; }
       .todo-el-contenido .portfolio-container h3 {
         padding: 20px 50px; }
       .todo-el-contenido .portfolio-container a {
