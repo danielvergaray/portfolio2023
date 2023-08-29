@@ -32,6 +32,17 @@
 
     .header-nombre-portfolio {
       grid-column: 1;
+      width: fit-content;
+      a{
+        color: white;
+        text-decoration: none;
+        
+        
+        p{
+          
+          display: flex;
+        }
+      }
     }
     .header-menuHamburguesa-container {
       grid-column: 2;
@@ -102,11 +113,12 @@
         }
       }
     }
-    .estudios, .sobreMi-container, .portfolio-container,.contacto-container{
+    .estudios, .sobreMi-container, .portfolio-container,.contacto-container, .idiomas{
       text-align: center;
       h2{
         font-size: 20px;
         position: relative;
+        padding-top: 20px;
         &::after {
           content: "";
           position: absolute;
@@ -122,7 +134,9 @@
         color: white;
       }
     }
-    .estudios {
+    .estudios, .idiomas {
+      /* background: linear-gradient(45deg, red, black); */
+      background: linear-gradient(45deg, red, #800000, #400000, black);
       ul {
         padding: 10px 0;
         list-style: none;
@@ -130,7 +144,8 @@
           position: relative;
           top: -15px;
           padding-left: 90px;
-          text-decoration: underline;
+          color: blue;
+          font-weight: bold;
         }
         p {
           padding: 10px 90px;
@@ -148,7 +163,7 @@
       }
     }
     .sobreMi-container,
-    .estudios {
+    .estudios, .idiomas {
       
 
       img {

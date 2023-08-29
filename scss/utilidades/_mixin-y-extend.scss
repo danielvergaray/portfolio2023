@@ -3,10 +3,24 @@
 .propiedades-subrayado-titulos {
   content: "";
   position: absolute;
-  bottom: -5px; /* Ajusta esto para controlar la posición vertical del subrayado */
+  bottom: -5px;
+  /* Ajusta esto para controlar la posición vertical del subrayado */
   left: 42.5%;
   width: 60px;
-  height: 2px; /* Ajusta esto para controlar el grosor del subrayado */
-  background-color: #000; /* Cambia esto para cambiar el color del subrayado */
+  height: 2px;
+  /* Ajusta esto para controlar el grosor del subrayado */
+  background-color: #000;
+  /* Cambia esto para cambiar el color del subrayado */
   margin: auto;
 }
+
+/* .propiedades-botones {
+  font-size: 17px;
+  letter-spacing: 1.6px;
+  background-color: orangered;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0;
+} */

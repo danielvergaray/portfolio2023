@@ -9,6 +9,7 @@ function crearMenu(menu,menuDesplegable) {
     {nombre:"Sobre mi", link:"#sobreMi"},
     {nombre:"Estudios", link:"#estudiosId"},
     {nombre:"Portfolio", link:"#portfolioId"},
+    {nombre:"Idiomas", link:"#idiomasId"},
     {nombre:"Contacto", link:"#contactoId"},
   ];
 

@@ -35,7 +35,13 @@
       /* Cambia esto para cambiar el color del subrayado */
       left: 50%; }
     header .header-nombre-portfolio {
-      grid-column: 1; }
+      grid-column: 1;
+      width: fit-content; }
+      header .header-nombre-portfolio a {
+        color: white;
+        text-decoration: none; }
+        header .header-nombre-portfolio a p {
+          display: flex; }
     header .header-menuHamburguesa-container {
       grid-column: 2;
       text-align: center; }
@@ -90,12 +96,13 @@
         .todo-el-contenido main .main-secundaria .redes i {
           font-size: 20px;
           color: white; }
-    .todo-el-contenido .estudios, .todo-el-contenido .sobreMi-container, .todo-el-contenido .portfolio-container, .todo-el-contenido .contacto-container {
+    .todo-el-contenido .estudios, .todo-el-contenido .sobreMi-container, .todo-el-contenido .portfolio-container, .todo-el-contenido .contacto-container, .todo-el-contenido .idiomas {
       text-align: center; }
-      .todo-el-contenido .estudios h2, .todo-el-contenido .sobreMi-container h2, .todo-el-contenido .portfolio-container h2, .todo-el-contenido .contacto-container h2 {
+      .todo-el-contenido .estudios h2, .todo-el-contenido .sobreMi-container h2, .todo-el-contenido .portfolio-container h2, .todo-el-contenido .contacto-container h2, .todo-el-contenido .idiomas h2 {
         font-size: 20px;
-        position: relative; }
-        .todo-el-contenido .estudios h2::after, .todo-el-contenido .sobreMi-container h2::after, .todo-el-contenido .portfolio-container h2::after, .todo-el-contenido .contacto-container h2::after {
+        position: relative;
+        padding-top: 20px; }
+        .todo-el-contenido .estudios h2::after, .todo-el-contenido .sobreMi-container h2::after, .todo-el-contenido .portfolio-container h2::after, .todo-el-contenido .contacto-container h2::after, .todo-el-contenido .idiomas h2::after {
           content: "";
           position: absolute;
           bottom: -5px;
@@ -107,31 +114,35 @@
           background-color: red;
           /* Cambia esto para cambiar el color del subrayado */
           left: 50%; }
-      .todo-el-contenido .estudios i, .todo-el-contenido .sobreMi-container i, .todo-el-contenido .portfolio-container i, .todo-el-contenido .contacto-container i {
+      .todo-el-contenido .estudios i, .todo-el-contenido .sobreMi-container i, .todo-el-contenido .portfolio-container i, .todo-el-contenido .contacto-container i, .todo-el-contenido .idiomas i {
         color: white; }
-    .todo-el-contenido .estudios ul {
-      padding: 10px 0;
-      list-style: none; }
-      .todo-el-contenido .estudios ul .titulo-instituto {
-        position: relative;
-        top: -15px;
-        padding-left: 90px;
-        text-decoration: underline; }
-      .todo-el-contenido .estudios ul p {
-        padding: 10px 90px;
-        position: relative;
-        top: -15px; }
-      .todo-el-contenido .estudios ul i {
-        padding-right: 15px; }
-      .todo-el-contenido .estudios ul li {
-        text-align: left;
-        padding: 10px 60px; }
+    .todo-el-contenido .estudios, .todo-el-contenido .idiomas {
+      /* background: linear-gradient(45deg, red, black); */
+      background: linear-gradient(45deg, red, #800000, #400000, black); }
+      .todo-el-contenido .estudios ul, .todo-el-contenido .idiomas ul {
+        padding: 10px 0;
+        list-style: none; }
+        .todo-el-contenido .estudios ul .titulo-instituto, .todo-el-contenido .idiomas ul .titulo-instituto {
+          position: relative;
+          top: -15px;
+          padding-left: 90px;
+          color: blue;
+          font-weight: bold; }
+        .todo-el-contenido .estudios ul p, .todo-el-contenido .idiomas ul p {
+          padding: 10px 90px;
+          position: relative;
+          top: -15px; }
+        .todo-el-contenido .estudios ul i, .todo-el-contenido .idiomas ul i {
+          padding-right: 15px; }
+        .todo-el-contenido .estudios ul li, .todo-el-contenido .idiomas ul li {
+          text-align: left;
+          padding: 10px 60px; }
     .todo-el-contenido .sobreMi-container img,
-    .todo-el-contenido .estudios img {
+    .todo-el-contenido .estudios img, .todo-el-contenido .idiomas img {
       padding: 30px 0;
       width: 60%; }
     .todo-el-contenido .sobreMi-container p,
-    .todo-el-contenido .estudios p {
+    .todo-el-contenido .estudios p, .todo-el-contenido .idiomas p {
       padding: 20px 50px;
       text-align: left; }
     .todo-el-contenido .portfolio-container .proyectos-container {
@@ -159,24 +170,43 @@
           padding: 10px 20px; } }
 
 @media (max-width: 576px) {
-  .portfolio-container {
+  .portfolio-container-paginas {
     background-color: #1a1a1a;
     color: white; }
-    .portfolio-container .proyectos-container {
-      padding: 0px 0px; }
-    .portfolio-container p {
+    .portfolio-container-paginas p {
       padding: 20px 50px;
       text-align: left;
       color: white; }
-    .portfolio-container h3 {
+    .portfolio-container-paginas h3 {
       padding: 20px 50px;
       color: white; }
-    .portfolio-container a {
-      text-decoration: none;
-      color: white; }
-    .portfolio-container img {
-      width: 100%;
-      margin: 10px 0; } }
+    .portfolio-container-paginas div {
+      display: flex; }
+      .portfolio-container-paginas div img {
+        width: 80%;
+        margin: auto; }
+    .portfolio-container-paginas .btn-visitar-sitio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      margin: 0px; }
+      .portfolio-container-paginas .btn-visitar-sitio a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 0; }
+        .portfolio-container-paginas .btn-visitar-sitio a button {
+          padding: 15px;
+          font-size: 17px;
+          letter-spacing: 1.3px;
+          background-color: orangered;
+          border: none;
+          color: white;
+          border-radius: 10px;
+          width: fit-content;
+          margin: 0;
+          font-weight: 900; } }
 
 .propiedades-subrayado-titulos {
   content: "";
@@ -190,3 +220,14 @@
   background-color: #000;
   /* Cambia esto para cambiar el color del subrayado */
   margin: auto; }
+
+/* .propiedades-botones {
+  font-size: 17px;
+  letter-spacing: 1.6px;
+  background-color: orangered;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0;
+} */

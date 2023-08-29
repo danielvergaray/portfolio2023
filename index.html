@@ -9,13 +9,15 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
-  <title>Document</title>
+  <title>Portfolio profesional</title>
 </head>
 
 <body>
   <header>
     <div class="header-nombre-portfolio">
-      <p>Daniel Vergaray</p>
+      <a href="index.html">
+        <p>Daniel Vergaray</p>
+      </a>
     </div>
     <div class="header-info-portfolio">
       <ul>
@@ -42,7 +44,7 @@
             <br />Developer Jr.
           </h1>
         </div>
-        <div class="main-foto" id="sobreMi">
+        <div class="main-foto" id="sobreMi"> <!-- Para ir desde el navbar  -->
           <img src="./imagenes/yo-cv.jpeg" alt="foto-de-perfil" />
         </div>
       </section>
@@ -139,7 +141,7 @@
             </p> -->
         </div>
         <div class="proyectos" data-aos="fade-up">
-          <a href="https://danielvergaray.github.io/entregaFinal_ecommerce/index.html">
+          <a href="./secciones/ecommerceMrSnack.html">
             <h3>Ecommerce Mr. Snack</h3>
             <img src="./imagenes/ecommerce.jpeg" alt="Ecommerce-mr-snack" />
           </a>
@@ -152,9 +154,9 @@
             </p> -->
         </div>
         <div class="proyectos" data-aos="fade-up">
-          <a href="https://danielvergaray.github.io/AdivinaElNumero_juego/">
+          <a href="./secciones/adivinaNumero.html">
             <h3>Juego: Adivina el Numero</h3>
-            <img src="./imagenes/adivinaElNumero.jpeg" alt="juego-AdivinaElNumero" />
+            <img id="idiomasId" src="./imagenes/adivinaElNumero.jpeg" alt="juego-AdivinaElNumero" />
           </a>
           <!-- <p>
               Este proyecto consiste en un juego donde se genera un numero al
@@ -167,6 +169,23 @@
           <h3>Proyecto 4</h3>
         </div>
       </div>
+    </section>
+    <section class="idiomas">
+      <h2 class="animate__animated animate__fadeIn">Idiomas</h2>
+      <p data-aos="fade-up">
+        Siendo el español mi idioma nativo, he estudiado otros idiomas a lo largo de los años.
+      </p>
+      <ul data-aos="flip-left">
+        <li><i class="fa-solid fa-check"></i>Inglés</li>
+        <p>
+          Más de 10 años de estudios contantes del idioma. Los estudios fueron realizados en reconocidos institutos en
+          Venezuela y Perú, ademas de poseer cursos de docencia en el idioma Inglés.
+        </p>
+
+        <li><i class="fa-solid fa-check"></i>Francés</li>
+        <p>01 año de estudio en la alianza francesa con sede en Venezuela.</p>
+
+      </ul>
     </section>
     <section id="contactoId" class="contacto-container" data-aos="fade-up">
       <h2>Contacto</h2>
