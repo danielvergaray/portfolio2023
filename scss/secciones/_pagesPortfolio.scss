@@ -1,64 +1,66 @@
 @media (max-width: 576px) {
+  .header-iconoRegresar-container {
+    display: flex;
+    justify-content: center;
 
+    a {
+      color: white;
 
-
-    .portfolio-container-paginas {
-        background-color: rgba(26, 26, 26, 1);
-        color: white;
-
-
-        p {
-            padding: 20px 50px;
-            text-align: left;
-            color: white;
-        }
-
-        h3 {
-            padding: 20px 50px;
-            color: white;
-        }
-
-
-        div {
-            display: flex;
-
-            img {
-                width: 80%;
-                margin: auto;
-
-            }
-
-        }
-
-       .btn-visitar-sitio{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 0;
-            margin: 0px;
-            a {
-                text-decoration: none;
-                color: white;
-                padding: 10px 0;
-
-                button {
-                    padding: 15px;
-                    font-size: 17px;
-                    letter-spacing: 1.3px;
-                    background-color: orangered;
-                    border: none;
-                    color: white;
-                    border-radius: 10px;
-                    width: fit-content;
-                    margin: 0;
-                    font-weight: 900;
-
-                    
-                }
-               
-            
-            }
-        }
+      i {
+        text-align: center;
+      }
     }
+  }
+
+  .portfolio-container-paginas {
+    background-color: rgba(26, 26, 26, 1);
+    color: white;
+
+    p {
+      padding: 40px 50px;
+      text-align: left;
+      color: white;
+    }
+
+    h3 {
+      padding: 20px 50px;
+      color: white;
+    }
+
+    div {
+      display: flex;
+
+      img {
+        width: 80%;
+        margin: auto;
+      }
+    }
+
+    .btn-visitar-sitio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0;
+      margin: 0px;
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 0;
+
+        button {
+          padding: 15px;
+          font-size: 17px;
+          letter-spacing: 1.3px;
+          background-color: orangered;
+          border: none;
+          color: white;
+          border-radius: 10px;
+          width: fit-content;
+          margin: 0;
+          font-weight: 900;
+        }
+      }
+    }
+  }
 }

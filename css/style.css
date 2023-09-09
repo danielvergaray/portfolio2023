@@ -97,11 +97,12 @@
           font-size: 20px;
           color: white; }
     .todo-el-contenido .estudios, .todo-el-contenido .sobreMi-container, .todo-el-contenido .portfolio-container, .todo-el-contenido .contacto-container, .todo-el-contenido .idiomas {
-      text-align: center; }
+      text-align: center;
+      padding: 50px 0; }
       .todo-el-contenido .estudios h2, .todo-el-contenido .sobreMi-container h2, .todo-el-contenido .portfolio-container h2, .todo-el-contenido .contacto-container h2, .todo-el-contenido .idiomas h2 {
         font-size: 20px;
         position: relative;
-        padding-top: 20px; }
+        padding-top: 10px; }
         .todo-el-contenido .estudios h2::after, .todo-el-contenido .sobreMi-container h2::after, .todo-el-contenido .portfolio-container h2::after, .todo-el-contenido .contacto-container h2::after, .todo-el-contenido .idiomas h2::after {
           content: "";
           position: absolute;
@@ -120,7 +121,7 @@
       /* background: linear-gradient(45deg, red, black); */
       background: linear-gradient(45deg, red, #800000, #400000, black); }
       .todo-el-contenido .estudios ul, .todo-el-contenido .idiomas ul {
-        padding: 10px 0;
+        padding: 0px 0;
         list-style: none; }
         .todo-el-contenido .estudios ul .titulo-instituto, .todo-el-contenido .idiomas ul .titulo-instituto {
           position: relative;
@@ -129,7 +130,7 @@
           color: blue;
           font-weight: bold; }
         .todo-el-contenido .estudios ul p, .todo-el-contenido .idiomas ul p {
-          padding: 10px 90px;
+          padding: 10px 90px 0px;
           position: relative;
           top: -15px; }
         .todo-el-contenido .estudios ul i, .todo-el-contenido .idiomas ul i {
@@ -170,11 +171,18 @@
           padding: 10px 20px; } }
 
 @media (max-width: 576px) {
+  .header-iconoRegresar-container {
+    display: flex;
+    justify-content: center; }
+    .header-iconoRegresar-container a {
+      color: white; }
+      .header-iconoRegresar-container a i {
+        text-align: center; }
   .portfolio-container-paginas {
     background-color: #1a1a1a;
     color: white; }
     .portfolio-container-paginas p {
-      padding: 20px 50px;
+      padding: 40px 50px;
       text-align: left;
       color: white; }
     .portfolio-container-paginas h3 {
@@ -190,7 +198,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 20px 0;
+      padding: 50px 0;
       margin: 0px; }
       .portfolio-container-paginas .btn-visitar-sitio a {
         text-decoration: none;

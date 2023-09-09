@@ -115,10 +115,12 @@
     }
     .estudios, .sobreMi-container, .portfolio-container,.contacto-container, .idiomas{
       text-align: center;
+      padding: 50px 0;
       h2{
         font-size: 20px;
         position: relative;
-        padding-top: 20px;
+        padding-top: 10px;
+        
         &::after {
           content: "";
           position: absolute;
@@ -138,7 +140,7 @@
       /* background: linear-gradient(45deg, red, black); */
       background: linear-gradient(45deg, red, #800000, #400000, black);
       ul {
-        padding: 10px 0;
+        padding: 0px 0;
         list-style: none;
         .titulo-instituto{
           position: relative;
@@ -148,7 +150,7 @@
           font-weight: bold;
         }
         p {
-          padding: 10px 90px;
+          padding: 10px 90px 0px;
           position: relative;
           top: -15px;
         }
