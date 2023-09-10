@@ -5,6 +5,48 @@
   margin: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
+/* VERSION DESKTOP --------  */
+.header-menuHamburguesa-container,
+.header-info-mobile {
+  display: none; }
+
+header {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 20px;
+  color: white; }
+  header .header-info-portfolio ul {
+    color: white;
+    display: flex;
+    justify-content: space-around; }
+    header .header-info-portfolio ul li {
+      list-style: none; }
+  header .header-nombre-portfolio {
+    padding-right: 20px;
+    margin-left: 10px; }
+    header .header-nombre-portfolio a {
+      color: white;
+      text-decoration: none; }
+
+.todo-el-contenido {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center; }
+  .todo-el-contenido main .main-principal {
+    padding: 20px 10px 0; }
+    .todo-el-contenido main .main-principal .main-foto {
+      padding: 20px 0;
+      float: left;
+      width: 50%; }
+      .todo-el-contenido main .main-principal .main-foto img {
+        width: 20%; }
+  .todo-el-contenido main .main-secundaria {
+    float: left; }
+  .todo-el-contenido .sobreMi-container {
+    float: right;
+    width: 50%; }
+
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
   .header-info-portfolio,
@@ -89,7 +131,9 @@
         text-align: center;
         padding: 20px 10px 0; }
         .todo-el-contenido main .main-principal .main-foto {
-          padding: 20px 0; }
+          padding: 20px 0;
+          float: none;
+          width: 100%; }
           .todo-el-contenido main .main-principal .main-foto img {
             width: 60%; }
       .todo-el-contenido main .main-secundaria {
@@ -104,7 +148,9 @@
     .todo-el-contenido .contacto-container,
     .todo-el-contenido .idiomas {
       text-align: center;
-      padding: 50px 0; }
+      padding: 50px 0;
+      float: none;
+      width: 100%; }
       .todo-el-contenido .estudios h2,
       .todo-el-contenido .sobreMi-container h2,
       .todo-el-contenido .portfolio-container h2,
@@ -195,27 +241,6 @@
           font-size: 20px; }
         .todo-el-contenido .contacto-container .redes p {
           padding: 10px 20px; } }
-
-/* VERSION DESKTOP --------  */
-.header-menuHamburguesa-container {
-  display: none; }
-
-header {
-  background-color: black;
-  display: grid;
-  /* grid-template-columns: 30% 70%; */
-  padding: 20px;
-  color: white; }
-  header .header-info-portfolio ul {
-    color: white;
-    display: flex;
-    justify-content: space-around; }
-    header .header-info-portfolio ul li {
-      list-style: none; }
-  header .header-nombre-portfolio {
-    padding-right: 20px; }
-    header .header-nombre-portfolio a {
-      color: white; }
 
 @media (max-width: 576px) {
   .header-iconoRegresar-container {
