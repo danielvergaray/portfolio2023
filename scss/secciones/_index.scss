@@ -140,41 +140,38 @@ header {
     }
   }
 
-  .portfolio-container {
+  /* .portfolio-container {
     padding-bottom: 80px;
-    p{
+
+    p {
       height: fit-content;
       padding: 40px 0;
     }
-    h2{
+
+    h2 {
       padding-top: 80px;
     }
-    .proyectos-container {
+
+  } */
+.carousel-item{
+  display: flex;
+  margin: auto;
+}
+  .cards-wrapper {
+    
+
+    .card {
       display: flex;
-     
-      .proyectos {
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        padding: 0;
-        margin: 0;
-        a{
-          width: 25vw;
-          
-          img {
-            width: 50%;
-            height: 373px;
-          }
-          h3{
-            
-            color: white;
-            text-align: center;
-          }
-        }
+      width: 30%;
+
+      img {
+        max-width: 80%;
+        max-height: 100%
       }
     }
   }
-  .contacto-container{
+
+  .contacto-container {
     background: linear-gradient(45deg, red, #800000, #400000, black);
   }
 }

@@ -34,7 +34,20 @@ header {
   background-color: #1a1a1a;
   color: white;
   text-align: center;
-  padding: 40px 0px 0; }
+  padding: 40px 0px 0;
+  /* .portfolio-container {
+    padding-bottom: 80px;
+
+    p {
+      height: fit-content;
+      padding: 40px 0;
+    }
+
+    h2 {
+      padding-top: 80px;
+    }
+
+  } */ }
   .todo-el-contenido main .main-principal {
     padding: 0px 10px 0; }
   .todo-el-contenido .sobreMi-container {
@@ -85,29 +98,15 @@ header {
       grid-column: 1; }
     .todo-el-contenido .seccion2-desktop .idiomas-desktop {
       grid-column: 2; }
-  .todo-el-contenido .portfolio-container {
-    padding-bottom: 80px; }
-    .todo-el-contenido .portfolio-container p {
-      height: fit-content;
-      padding: 40px 0; }
-    .todo-el-contenido .portfolio-container h2 {
-      padding-top: 80px; }
-    .todo-el-contenido .portfolio-container .proyectos-container {
-      display: flex; }
-      .todo-el-contenido .portfolio-container .proyectos-container .proyectos {
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        padding: 0;
-        margin: 0; }
-        .todo-el-contenido .portfolio-container .proyectos-container .proyectos a {
-          width: 25vw; }
-          .todo-el-contenido .portfolio-container .proyectos-container .proyectos a img {
-            width: 50%;
-            height: 373px; }
-          .todo-el-contenido .portfolio-container .proyectos-container .proyectos a h3 {
-            color: white;
-            text-align: center; }
+  .todo-el-contenido .carousel-item {
+    display: flex;
+    margin: auto; }
+  .todo-el-contenido .cards-wrapper .card {
+    display: flex;
+    width: 30%; }
+    .todo-el-contenido .cards-wrapper .card img {
+      max-width: 80%;
+      max-height: 100%; }
   .todo-el-contenido .contacto-container {
     background: linear-gradient(45deg, red, #800000, #400000, black); }
 
