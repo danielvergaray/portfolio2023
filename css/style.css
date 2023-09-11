@@ -7,7 +7,8 @@
 
 /* VERSION DESKTOP --------  */
 .header-menuHamburguesa-container,
-.header-info-mobile {
+.header-info-mobile,
+.idiomas-mobile {
   display: none; }
 
 header {
@@ -32,25 +33,89 @@ header {
 .todo-el-contenido {
   background-color: #1a1a1a;
   color: white;
-  text-align: center; }
+  text-align: center;
+  padding: 40px 0px 0; }
   .todo-el-contenido main .main-principal {
-    padding: 20px 10px 0; }
-    .todo-el-contenido main .main-principal .main-foto {
-      padding: 20px 0;
-      float: left;
-      width: 50%; }
-      .todo-el-contenido main .main-principal .main-foto img {
-        width: 20%; }
-  .todo-el-contenido main .main-secundaria {
-    float: left; }
+    padding: 0px 10px 0; }
   .todo-el-contenido .sobreMi-container {
-    float: right;
-    width: 50%; }
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 40px 80px; }
+    .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi {
+      grid-column: 1; }
+      .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi .main-foto {
+        padding: 20px 0; }
+        .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi .main-foto img {
+          width: 50%; }
+        .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi .main-foto .redes {
+          padding-top: 20px; }
+          .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi .main-foto .redes i {
+            font-size: 20px;
+            color: white; }
+    .todo-el-contenido .sobreMi-container .texto-sobreMi {
+      grid-column: 2; }
+      .todo-el-contenido .sobreMi-container .texto-sobreMi h2 {
+        text-align: center;
+        padding-bottom: 20px; }
+      .todo-el-contenido .sobreMi-container .texto-sobreMi p {
+        text-align: left;
+        padding: 0 100px;
+        line-height: 30px;
+        font-size: 18px; }
+  .todo-el-contenido .seccion2-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(45deg, red, #800000, #400000, black);
+    padding: 80px; }
+    .todo-el-contenido .seccion2-desktop ul li {
+      padding: 20px 0;
+      list-style: none;
+      text-align: left; }
+    .todo-el-contenido .seccion2-desktop ul .titulo-instituto {
+      color: blue; }
+    .todo-el-contenido .seccion2-desktop h2 {
+      padding-bottom: 20px;
+      text-align: center; }
+    .todo-el-contenido .seccion2-desktop h3 {
+      padding: 20px 0; }
+    .todo-el-contenido .seccion2-desktop p {
+      text-align: left;
+      padding: 0 100px; }
+    .todo-el-contenido .seccion2-desktop .estudios {
+      grid-column: 1; }
+    .todo-el-contenido .seccion2-desktop .idiomas-desktop {
+      grid-column: 2; }
+  .todo-el-contenido .portfolio-container {
+    padding-bottom: 80px; }
+    .todo-el-contenido .portfolio-container p {
+      height: fit-content;
+      padding: 40px 0; }
+    .todo-el-contenido .portfolio-container h2 {
+      padding-top: 80px; }
+    .todo-el-contenido .portfolio-container .proyectos-container {
+      display: flex; }
+      .todo-el-contenido .portfolio-container .proyectos-container .proyectos {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        padding: 0;
+        margin: 0; }
+        .todo-el-contenido .portfolio-container .proyectos-container .proyectos a {
+          width: 25vw; }
+          .todo-el-contenido .portfolio-container .proyectos-container .proyectos a img {
+            width: 50%;
+            height: 373px; }
+          .todo-el-contenido .portfolio-container .proyectos-container .proyectos a h3 {
+            color: white;
+            text-align: center; }
+  .todo-el-contenido .contacto-container {
+    background: linear-gradient(45deg, red, #800000, #400000, black); }
 
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
   .header-info-portfolio,
-  .proyecto-pig-game {
+  .proyecto-pig-game,
+  .idiomas-desktop {
     display: none; }
   header {
     display: grid;
@@ -146,7 +211,7 @@ header {
     .todo-el-contenido .sobreMi-container,
     .todo-el-contenido .portfolio-container,
     .todo-el-contenido .contacto-container,
-    .todo-el-contenido .idiomas {
+    .todo-el-contenido .idiomas-mobile {
       text-align: center;
       padding: 50px 0;
       float: none;
@@ -155,7 +220,7 @@ header {
       .todo-el-contenido .sobreMi-container h2,
       .todo-el-contenido .portfolio-container h2,
       .todo-el-contenido .contacto-container h2,
-      .todo-el-contenido .idiomas h2 {
+      .todo-el-contenido .idiomas-mobile h2 {
         font-size: 20px;
         position: relative;
         padding-top: 10px; }
@@ -163,7 +228,7 @@ header {
         .todo-el-contenido .sobreMi-container h2::after,
         .todo-el-contenido .portfolio-container h2::after,
         .todo-el-contenido .contacto-container h2::after,
-        .todo-el-contenido .idiomas h2::after {
+        .todo-el-contenido .idiomas-mobile h2::after {
           content: "";
           position: absolute;
           bottom: -5px;
@@ -179,43 +244,43 @@ header {
       .todo-el-contenido .sobreMi-container i,
       .todo-el-contenido .portfolio-container i,
       .todo-el-contenido .contacto-container i,
-      .todo-el-contenido .idiomas i {
+      .todo-el-contenido .idiomas-mobile i {
         color: white; }
     .todo-el-contenido .estudios,
-    .todo-el-contenido .idiomas {
+    .todo-el-contenido .idiomas-mobile {
       /* background: linear-gradient(45deg, red, black); */
       background: linear-gradient(45deg, red, #800000, #400000, black); }
       .todo-el-contenido .estudios ul,
-      .todo-el-contenido .idiomas ul {
+      .todo-el-contenido .idiomas-mobile ul {
         padding: 0px 0;
         list-style: none; }
         .todo-el-contenido .estudios ul .titulo-instituto,
-        .todo-el-contenido .idiomas ul .titulo-instituto {
+        .todo-el-contenido .idiomas-mobile ul .titulo-instituto {
           position: relative;
           top: -15px;
           padding-left: 90px;
           color: blue;
           font-weight: bold; }
         .todo-el-contenido .estudios ul p,
-        .todo-el-contenido .idiomas ul p {
+        .todo-el-contenido .idiomas-mobile ul p {
           padding: 10px 90px 0px;
           position: relative;
           top: -15px; }
         .todo-el-contenido .estudios ul i,
-        .todo-el-contenido .idiomas ul i {
+        .todo-el-contenido .idiomas-mobile ul i {
           padding-right: 15px; }
         .todo-el-contenido .estudios ul li,
-        .todo-el-contenido .idiomas ul li {
+        .todo-el-contenido .idiomas-mobile ul li {
           text-align: left;
           padding: 10px 60px; }
     .todo-el-contenido .sobreMi-container img,
     .todo-el-contenido .estudios img,
-    .todo-el-contenido .idiomas img {
+    .todo-el-contenido .idiomas-mobile img {
       padding: 30px 0;
       width: 60%; }
     .todo-el-contenido .sobreMi-container p,
     .todo-el-contenido .estudios p,
-    .todo-el-contenido .idiomas p {
+    .todo-el-contenido .idiomas-mobile p {
       padding: 20px 50px;
       text-align: left; }
     .todo-el-contenido .portfolio-container .proyectos-container {

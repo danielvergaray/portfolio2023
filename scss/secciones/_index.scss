@@ -1,7 +1,8 @@
 /* VERSION DESKTOP --------  */
 
 .header-menuHamburguesa-container,
-.header-info-mobile {
+.header-info-mobile,
+.idiomas-mobile {
   display: none;
 }
 
@@ -25,50 +26,168 @@ header {
       }
     }
   }
+
   .header-nombre-portfolio {
     padding-right: 20px;
     margin-left: 10px;
+
     a {
       color: white;
       text-decoration: none;
     }
   }
 }
+
 .todo-el-contenido {
   background-color: rgba(26, 26, 26, 1);
   color: white;
   text-align: center;
+  padding: 40px 0px 0;
 
   main {
     .main-principal {
-      padding: 20px 10px 0;
+      padding: 0px 10px 0;
+
+    }
+  }
+
+
+  .sobreMi-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    padding: 40px 80px;
+
+    .seccion-fotoSobreMi {
+
+      grid-column: 1;
+
       .main-foto {
         padding: 20px 0;
-        float: left;
-        width: 50%;
 
         img {
-          width: 20%;
+          width: 50%;
+        }
+
+        .redes {
+          padding-top: 20px;
+
+          i {
+            font-size: 20px;
+            color: white;
+          }
         }
       }
     }
-    .main-secundaria{
-      float: left;
-      
+
+    .texto-sobreMi {
+      grid-column: 2;
+
+      h2 {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+
+      p {
+        text-align: left;
+        padding: 0 100px;
+        line-height: 30px;
+        font-size: 18px;
+      }
     }
   }
 
-  .sobreMi-container {
-    float: right;
-    width: 50%;
+  .seccion2-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: linear-gradient(45deg, red, #800000, #400000, black);
+    padding: 80px;
+
+    ul {
+
+      li {
+        padding: 20px 0;
+        list-style: none;
+        text-align: left;
+      }
+
+      .titulo-instituto {
+        color: blue;
+      }
+    }
+
+    h2 {
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      padding: 20px 0;
+    }
+
+    p {
+      text-align: left;
+      padding: 0 100px;
+    }
+
+    .estudios {
+      grid-column: 1;
+    }
+
+    .idiomas-desktop {
+      grid-column: 2;
+    }
+  }
+
+  .portfolio-container {
+    padding-bottom: 80px;
+    p{
+      height: fit-content;
+      padding: 40px 0;
+    }
+    h2{
+      padding-top: 80px;
+    }
+    .proyectos-container {
+      display: flex;
+     
+      .proyectos {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        padding: 0;
+        margin: 0;
+        a{
+          width: 25vw;
+          
+          img {
+            width: 50%;
+            height: 373px;
+          }
+          h3{
+            
+            color: white;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .contacto-container{
+    background: linear-gradient(45deg, red, #800000, #400000, black);
   }
 }
+
+
 
 /* VERSION MOBILE --------  */
 
 @media (max-width: 576px) {
+
   .header-info-portfolio,
-  .proyecto-pig-game {
+  .proyecto-pig-game,
+  .idiomas-desktop {
     display: none;
   }
 
@@ -82,27 +201,31 @@ header {
     color: white;
     z-index: 100;
     width: 100%;
+
     p {
       padding-left: 10px;
     }
+
     &::after {
       content: "";
       position: absolute;
-      bottom: 0px; /* Ajusta esto para controlar la posición vertical del subrayado */
+      bottom: 0px;
+      /* Ajusta esto para controlar la posición vertical del subrayado */
       transform: translateX(-50%);
       width: 100%;
-      height: 2px; /* Ajusta esto para controlar el grosor del subrayado */
-      background-color: rgb(
-        46,
-        47,
-        54
-      ); /* Cambia esto para cambiar el color del subrayado */
+      height: 2px;
+      /* Ajusta esto para controlar el grosor del subrayado */
+      background-color: rgb(46,
+          47,
+          54);
+      /* Cambia esto para cambiar el color del subrayado */
       left: 50%;
     }
 
     .header-nombre-portfolio {
       grid-column: 1;
       width: fit-content;
+
       a {
         color: white;
         text-decoration: none;
@@ -112,6 +235,7 @@ header {
         }
       }
     }
+
     .header-menuHamburguesa-container {
       display: block;
       grid-column: 2;
@@ -119,6 +243,7 @@ header {
       width: 50%;
     }
   }
+
   .header-info-mobile {
     z-index: 100;
     background-color: black;
@@ -136,24 +261,32 @@ header {
       line-height: 50px;
       height: 100vh;
       font-size: 20px;
-      margin: 0; /* Elimina el margen por defecto del ul */
-      padding: 0; /* Elimina el padding por defecto del ul */
+      margin: 0;
+      /* Elimina el margen por defecto del ul */
+      padding: 0;
+      /* Elimina el padding por defecto del ul */
       display: flex;
       flex-direction: column;
-      justify-content: center; /* Centra verticalmente los elementos */
-      align-items: center; /* Centra horizontalmente los elementos */
+      justify-content: center;
+      /* Centra verticalmente los elementos */
+      align-items: center;
+
+      /* Centra horizontalmente los elementos */
       a {
         color: white;
         text-decoration: none;
       }
     }
   }
+
   .oculto {
     display: none;
   }
+
   .todo-el-contenido {
     background-color: rgba(26, 26, 26, 1);
     color: white;
+
     main {
       position: relative;
       z-index: 1;
@@ -168,11 +301,13 @@ header {
           padding: 20px 0;
           float: none;
           width: 100%;
+
           img {
             width: 60%;
           }
         }
       }
+
       .main-secundaria {
         text-align: center;
         padding-bottom: 20px;
@@ -185,15 +320,17 @@ header {
         }
       }
     }
+
     .estudios,
     .sobreMi-container,
     .portfolio-container,
     .contacto-container,
-    .idiomas {
+    .idiomas-mobile {
       text-align: center;
       padding: 50px 0;
       float: none;
       width: 100%;
+
       h2 {
         font-size: 20px;
         position: relative;
@@ -202,25 +339,32 @@ header {
         &::after {
           content: "";
           position: absolute;
-          bottom: -5px; /* Ajusta esto para controlar la posición vertical del subrayado */
+          bottom: -5px;
+          /* Ajusta esto para controlar la posición vertical del subrayado */
           transform: translateX(-50%);
           width: 70px;
-          height: 2px; /* Ajusta esto para controlar el grosor del subrayado */
-          background-color: red; /* Cambia esto para cambiar el color del subrayado */
+          height: 2px;
+          /* Ajusta esto para controlar el grosor del subrayado */
+          background-color: red;
+          /* Cambia esto para cambiar el color del subrayado */
           left: 50%;
         }
       }
+
       i {
         color: white;
       }
     }
+
     .estudios,
-    .idiomas {
+    .idiomas-mobile {
       /* background: linear-gradient(45deg, red, black); */
       background: linear-gradient(45deg, red, #800000, #400000, black);
+
       ul {
         padding: 0px 0;
         list-style: none;
+
         .titulo-instituto {
           position: relative;
           top: -15px;
@@ -228,49 +372,59 @@ header {
           color: blue;
           font-weight: bold;
         }
+
         p {
           padding: 10px 90px 0px;
           position: relative;
           top: -15px;
         }
+
         i {
           padding-right: 15px;
         }
+
         li {
           text-align: left;
           padding: 10px 60px;
         }
       }
     }
+
     .sobreMi-container,
     .estudios,
-    .idiomas {
+    .idiomas-mobile {
       img {
         padding: 30px 0;
         width: 60%;
       }
+
       p {
         padding: 20px 50px;
         text-align: left;
       }
     }
+
     .portfolio-container {
       .proyectos-container {
         padding: 0px 0px;
       }
+
       p {
         padding: 20px 50px;
         text-align: left;
         color: white;
       }
+
       h3 {
         padding: 20px 50px;
         color: white;
       }
+
       a {
         text-decoration: none;
         color: black;
       }
+
       img {
         width: 60%;
         margin: 10px 0;
@@ -279,12 +433,14 @@ header {
 
     .contacto-container {
       margin-top: 20px;
+
       .redes {
         padding: 40px 0;
 
         i {
           font-size: 20px;
         }
+
         p {
           padding: 10px 20px;
         }
