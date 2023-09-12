@@ -8,7 +8,7 @@ function crearMenu(menu,menuDesplegable) {
   let opcionesMenu= [
     {nombre:"Sobre mi", link:"#sobreMi"},
     {nombre:"Estudios", link:"#estudiosId"},
-    {nombre:"Portfolio", link:"#portfolioId"},
+    {nombre:"Portfolio", link:"#contactoId"},
     {nombre:"Idiomas", link:"#idiomasId"},
     {nombre:"Contacto", link:"#contactoId"},
   ];

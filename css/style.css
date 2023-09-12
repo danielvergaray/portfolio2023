@@ -8,46 +8,47 @@
 /* VERSION DESKTOP --------  */
 .header-menuHamburguesa-container,
 .header-info-mobile,
-.idiomas-mobile {
+.idiomas-mobile,
+.portfolio-container-mobile {
   display: none; }
 
 header {
   background-color: black;
   display: grid;
-  grid-template-columns: 30% 70%;
-  padding: 20px;
+  font-size: 20px;
+  grid-template-columns: 20% 80%;
+  padding: 40px;
   color: white; }
-  header .header-info-portfolio ul {
-    color: white;
-    display: flex;
-    justify-content: space-around; }
-    header .header-info-portfolio ul li {
-      list-style: none; }
+  header .header-info-portfolio {
+    margin: auto 0; }
+    header .header-info-portfolio ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+      margin: 0; }
+      header .header-info-portfolio ul li {
+        list-style: none;
+        cursor: pointer; }
+        header .header-info-portfolio ul li a {
+          text-decoration: none;
+          color: white; }
+        header .header-info-portfolio ul li:hover {
+          background: linear-gradient(45deg, red, #800000, #400000, black); }
   header .header-nombre-portfolio {
     padding-right: 20px;
-    margin-left: 10px; }
+    margin-left: 10px;
+    width: fit-content; }
     header .header-nombre-portfolio a {
       color: white;
       text-decoration: none; }
+      header .header-nombre-portfolio a p {
+        margin: 0; }
 
 .todo-el-contenido {
   background-color: #1a1a1a;
   color: white;
   text-align: center;
-  padding: 40px 0px 0;
-  /* .portfolio-container {
-    padding-bottom: 80px;
-
-    p {
-      height: fit-content;
-      padding: 40px 0;
-    }
-
-    h2 {
-      padding-top: 80px;
-    }
-
-  } */ }
+  padding: 40px 0px 0; }
   .todo-el-contenido main .main-principal {
     padding: 0px 10px 0; }
   .todo-el-contenido .sobreMi-container {
@@ -55,66 +56,141 @@ header {
     grid-template-columns: 30% 70%;
     padding: 40px 80px; }
     .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi {
+      margin: auto;
       grid-column: 1; }
       .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi .main-foto {
         padding: 20px 0; }
         .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi .main-foto img {
-          width: 50%; }
+          width: 60%; }
         .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi .main-foto .redes {
           padding-top: 20px; }
           .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi .main-foto .redes i {
-            font-size: 20px;
-            color: white; }
+            font-size: 25px;
+            color: white;
+            padding: 10px; }
     .todo-el-contenido .sobreMi-container .texto-sobreMi {
       grid-column: 2; }
       .todo-el-contenido .sobreMi-container .texto-sobreMi h2 {
-        text-align: center;
-        padding-bottom: 20px; }
+        text-align: center; }
       .todo-el-contenido .sobreMi-container .texto-sobreMi p {
         text-align: left;
-        padding: 0 100px;
+        padding: 25px 100px;
         line-height: 30px;
         font-size: 18px; }
+        .todo-el-contenido .sobreMi-container .texto-sobreMi p:nth-of-type(2) {
+          padding-top: 0; }
   .todo-el-contenido .seccion2-desktop {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     background: linear-gradient(45deg, red, #800000, #400000, black);
-    padding: 80px; }
-    .todo-el-contenido .seccion2-desktop ul li {
-      padding: 20px 0;
-      list-style: none;
-      text-align: left; }
-    .todo-el-contenido .seccion2-desktop ul .titulo-instituto {
-      color: blue; }
+    padding: 0 80px 80px; }
+    .todo-el-contenido .seccion2-desktop ul {
+      grid-column: 2; }
+      .todo-el-contenido .seccion2-desktop ul li {
+        padding: 20px 0;
+        list-style: none;
+        text-align: left; }
+        .todo-el-contenido .seccion2-desktop ul li i {
+          margin-right: 10px; }
+      .todo-el-contenido .seccion2-desktop ul .titulo-instituto {
+        color: yellow;
+        padding-top: 0; }
     .todo-el-contenido .seccion2-desktop h2 {
-      padding-bottom: 20px;
       text-align: center; }
-    .todo-el-contenido .seccion2-desktop h3 {
-      padding: 20px 0; }
     .todo-el-contenido .seccion2-desktop p {
       text-align: left;
-      padding: 0 100px; }
-    .todo-el-contenido .seccion2-desktop .estudios {
-      grid-column: 1; }
-    .todo-el-contenido .seccion2-desktop .idiomas-desktop {
+      padding: 0 100px;
+      margin: 0; }
+    .todo-el-contenido .seccion2-desktop .primer-parrafo-estudios {
+      padding-top: 40px; }
+    .todo-el-contenido .seccion2-desktop .estudios-especializaciones {
       grid-column: 2; }
-  .todo-el-contenido .carousel-item {
-    display: flex;
-    margin: auto; }
-  .todo-el-contenido .cards-wrapper .card {
-    display: flex;
-    width: 30%; }
-    .todo-el-contenido .cards-wrapper .card img {
-      max-width: 80%;
-      max-height: 100%; }
+    .todo-el-contenido .seccion2-desktop .idiomas-desktop {
+      grid-column: 3; }
+  .todo-el-contenido .estudios,
+  .todo-el-contenido .sobreMi-container,
+  .todo-el-contenido .portfolio-container-desktop,
+  .todo-el-contenido .contacto-container,
+  .todo-el-contenido .idiomas,
+  .todo-el-contenido .estudios-especializaciones {
+    text-align: center;
+    width: 100%; }
+    .todo-el-contenido .estudios h2,
+    .todo-el-contenido .sobreMi-container h2,
+    .todo-el-contenido .portfolio-container-desktop h2,
+    .todo-el-contenido .contacto-container h2,
+    .todo-el-contenido .idiomas h2,
+    .todo-el-contenido .estudios-especializaciones h2 {
+      font-size: 30px;
+      position: relative;
+      padding-top: 50px; }
+      .todo-el-contenido .estudios h2::after,
+      .todo-el-contenido .sobreMi-container h2::after,
+      .todo-el-contenido .portfolio-container-desktop h2::after,
+      .todo-el-contenido .contacto-container h2::after,
+      .todo-el-contenido .idiomas h2::after,
+      .todo-el-contenido .estudios-especializaciones h2::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        /* Ajusta esto para controlar la posición vertical del subrayado */
+        transform: translateX(-50%);
+        width: 90px;
+        height: 2px;
+        /* Ajusta esto para controlar el grosor del subrayado */
+        background-color: red;
+        /* Cambia esto para cambiar el color del subrayado */
+        left: 50%; }
+    .todo-el-contenido .estudios i,
+    .todo-el-contenido .sobreMi-container i,
+    .todo-el-contenido .portfolio-container-desktop i,
+    .todo-el-contenido .contacto-container i,
+    .todo-el-contenido .idiomas i,
+    .todo-el-contenido .estudios-especializaciones i {
+      color: white; }
+  .todo-el-contenido .carousel-inner {
+    padding: 5em; }
+    .todo-el-contenido .carousel-inner .carousel-item {
+      max-width: 100%; }
+      .todo-el-contenido .carousel-inner .carousel-item .cards-container {
+        display: flex;
+        justify-content: space-evenly; }
+        .todo-el-contenido .carousel-inner .carousel-item .cards-container .card {
+          max-width: calc(100%/3);
+          margin: 0 2em;
+          box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+          border: none;
+          border-radius: 0;
+          background-color: gray;
+          padding: 50px; }
+          .todo-el-contenido .carousel-inner .carousel-item .cards-container .card img {
+            max-width: 70%;
+            height: 110px;
+            margin: auto; }
+  .todo-el-contenido .carousel-control-prev,
+  .todo-el-contenido .carousel-control-next {
+    background-color: gray;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%); }
   .todo-el-contenido .contacto-container {
+    padding: 0 20px 20px;
     background: linear-gradient(45deg, red, #800000, #400000, black); }
+    .todo-el-contenido .contacto-container .redes {
+      padding: 20px 0; }
+      .todo-el-contenido .contacto-container .redes a i {
+        font-size: 25px;
+        color: white; }
+      .todo-el-contenido .contacto-container .redes p {
+        padding-top: 20px; }
 
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
   .header-info-portfolio,
   .proyecto-pig-game,
-  .idiomas-desktop {
+  .portfolio-container-desktop {
     display: none; }
   header {
     display: grid;
@@ -160,7 +236,7 @@ header {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 39px;
+    top: 60px;
     color: white; }
     .header-info-mobile ul {
       list-style: none;
@@ -210,7 +286,7 @@ header {
     .todo-el-contenido .sobreMi-container,
     .todo-el-contenido .portfolio-container,
     .todo-el-contenido .contacto-container,
-    .todo-el-contenido .idiomas-mobile {
+    .todo-el-contenido .idiomas-mobile, .todo-el-contenido .portfolio-container-mobile {
       text-align: center;
       padding: 50px 0;
       float: none;
@@ -219,15 +295,15 @@ header {
       .todo-el-contenido .sobreMi-container h2,
       .todo-el-contenido .portfolio-container h2,
       .todo-el-contenido .contacto-container h2,
-      .todo-el-contenido .idiomas-mobile h2 {
-        font-size: 20px;
+      .todo-el-contenido .idiomas-mobile h2, .todo-el-contenido .portfolio-container-mobile h2 {
+        font-size: 30px;
         position: relative;
         padding-top: 10px; }
         .todo-el-contenido .estudios h2::after,
         .todo-el-contenido .sobreMi-container h2::after,
         .todo-el-contenido .portfolio-container h2::after,
         .todo-el-contenido .contacto-container h2::after,
-        .todo-el-contenido .idiomas-mobile h2::after {
+        .todo-el-contenido .idiomas-mobile h2::after, .todo-el-contenido .portfolio-container-mobile h2::after {
           content: "";
           position: absolute;
           bottom: -5px;
@@ -243,62 +319,72 @@ header {
       .todo-el-contenido .sobreMi-container i,
       .todo-el-contenido .portfolio-container i,
       .todo-el-contenido .contacto-container i,
-      .todo-el-contenido .idiomas-mobile i {
+      .todo-el-contenido .idiomas-mobile i, .todo-el-contenido .portfolio-container-mobile i {
         color: white; }
-    .todo-el-contenido .estudios,
-    .todo-el-contenido .idiomas-mobile {
-      /* background: linear-gradient(45deg, red, black); */
-      background: linear-gradient(45deg, red, #800000, #400000, black); }
-      .todo-el-contenido .estudios ul,
-      .todo-el-contenido .idiomas-mobile ul {
-        padding: 0px 0;
-        list-style: none; }
-        .todo-el-contenido .estudios ul .titulo-instituto,
-        .todo-el-contenido .idiomas-mobile ul .titulo-instituto {
-          position: relative;
-          top: -15px;
-          padding-left: 90px;
-          color: blue;
-          font-weight: bold; }
-        .todo-el-contenido .estudios ul p,
-        .todo-el-contenido .idiomas-mobile ul p {
-          padding: 10px 90px 0px;
-          position: relative;
-          top: -15px; }
-        .todo-el-contenido .estudios ul i,
-        .todo-el-contenido .idiomas-mobile ul i {
-          padding-right: 15px; }
-        .todo-el-contenido .estudios ul li,
-        .todo-el-contenido .idiomas-mobile ul li {
-          text-align: left;
-          padding: 10px 60px; }
-    .todo-el-contenido .sobreMi-container img,
-    .todo-el-contenido .estudios img,
-    .todo-el-contenido .idiomas-mobile img {
-      padding: 30px 0;
-      width: 60%; }
-    .todo-el-contenido .sobreMi-container p,
+    .todo-el-contenido .sobreMi-container {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 10px; }
+      .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi .main-foto {
+        padding: 20px 0; }
+        .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi .main-foto img {
+          width: 60%; }
+        .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi .main-foto .redes {
+          padding-top: 20px; }
+          .todo-el-contenido .sobreMi-container .seccion-fotoSobreMi .main-foto .redes i {
+            font-size: 25px;
+            color: white;
+            padding: 10px; }
+      .todo-el-contenido .sobreMi-container .texto-sobreMi h2 {
+        text-align: center; }
+      .todo-el-contenido .sobreMi-container .texto-sobreMi p {
+        text-align: left;
+        padding: 25px 50px;
+        line-height: 30px;
+        font-size: 18px; }
+        .todo-el-contenido .sobreMi-container .texto-sobreMi p:nth-of-type(2) {
+          padding-top: 0; }
+    .todo-el-contenido .seccion2-desktop {
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(45deg, red, #800000, #400000, black);
+      padding: 0px; }
+      .todo-el-contenido .seccion2-desktop .primer-parrafo-estudios {
+        padding-top: 40px; }
+      .todo-el-contenido .seccion2-desktop .estudios-especializaciones {
+        grid-column: 2; }
+      .todo-el-contenido .seccion2-desktop .idiomas-desktop {
+        grid-column: 3; }
     .todo-el-contenido .estudios p,
-    .todo-el-contenido .idiomas-mobile p {
-      padding: 20px 50px;
-      text-align: left; }
-    .todo-el-contenido .portfolio-container .proyectos-container {
-      padding: 0px 0px; }
-    .todo-el-contenido .portfolio-container p {
-      padding: 20px 50px;
-      text-align: left;
-      color: white; }
-    .todo-el-contenido .portfolio-container h3 {
-      padding: 20px 50px;
-      color: white; }
-    .todo-el-contenido .portfolio-container a {
-      text-decoration: none;
-      color: black; }
-    .todo-el-contenido .portfolio-container img {
-      width: 60%;
-      margin: 10px 0; }
+    .todo-el-contenido .estudios-especializaciones p,
+    .todo-el-contenido .idiomas-desktop p, .todo-el-contenido .portfolio-container-mobile p {
+      padding: 0 50px;
+      font-size: 18px; }
+    .todo-el-contenido .estudios h2,
+    .todo-el-contenido .estudios-especializaciones h2,
+    .todo-el-contenido .idiomas-desktop h2, .todo-el-contenido .portfolio-container-mobile h2 {
+      font-size: 30px; }
+    .todo-el-contenido .estudios {
+      padding: 25px 0; }
+    .todo-el-contenido .estudios-especializaciones h2,
+    .todo-el-contenido .idiomas-desktop h2 {
+      padding-top: 25px; }
+    .todo-el-contenido .idiomas-desktop {
+      padding-bottom: 40px; }
+    .todo-el-contenido .portfolio-container-mobile {
+      display: block; }
+      .todo-el-contenido .portfolio-container-mobile .carousel-inner {
+        padding: 50px; }
+        .todo-el-contenido .portfolio-container-mobile .carousel-inner .card {
+          background-color: gray;
+          height: 300px; }
+          .todo-el-contenido .portfolio-container-mobile .carousel-inner .card img {
+            max-width: 70%;
+            height: 110px;
+            margin: auto; }
     .todo-el-contenido .contacto-container {
-      margin-top: 20px; }
+      margin-top: 20px;
+      padding-bottom: 0; }
       .todo-el-contenido .contacto-container .redes {
         padding: 40px 0; }
         .todo-el-contenido .contacto-container .redes i {
