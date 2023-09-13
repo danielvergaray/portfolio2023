@@ -33,7 +33,8 @@ header {
           text-decoration: none;
           color: white; }
         header .header-info-portfolio ul li:hover {
-          background: linear-gradient(45deg, red, #800000, #400000, black); }
+          background: linear-gradient(45deg, red, #800000, #400000, black);
+          border-radius: 8px; }
   header .header-nombre-portfolio {
     padding-right: 20px;
     margin-left: 10px;
@@ -163,6 +164,20 @@ header {
           border-radius: 0;
           background-color: gray;
           padding: 50px; }
+          .todo-el-contenido .carousel-inner .carousel-item .cards-container .card a {
+            padding: 15px;
+            font-size: 17px;
+            letter-spacing: 1.3px;
+            background: linear-gradient(45deg, red, #800000, #400000, black);
+            border: none;
+            color: white;
+            border-radius: 10px;
+            width: fit-content;
+            margin: 0;
+            font-weight: 900;
+            cursor: pointer; }
+            .todo-el-contenido .carousel-inner .carousel-item .cards-container .card a:hover {
+              opacity: 0.7; }
           .todo-el-contenido .carousel-inner .carousel-item .cards-container .card img {
             max-width: 70%;
             height: 110px;
@@ -378,6 +393,20 @@ header {
         .todo-el-contenido .portfolio-container-mobile .carousel-inner .card {
           background-color: gray;
           height: 300px; }
+          .todo-el-contenido .portfolio-container-mobile .carousel-inner .card a {
+            padding: 15px;
+            font-size: 17px;
+            letter-spacing: 1.3px;
+            background: linear-gradient(45deg, red, #800000, #400000, black);
+            border: none;
+            color: white;
+            border-radius: 10px;
+            width: fit-content;
+            margin: 0;
+            font-weight: 900;
+            cursor: pointer; }
+            .todo-el-contenido .portfolio-container-mobile .carousel-inner .card a:hover {
+              opacity: 0.7; }
           .todo-el-contenido .portfolio-container-mobile .carousel-inner .card img {
             max-width: 70%;
             height: 110px;
@@ -392,17 +421,98 @@ header {
         .todo-el-contenido .contacto-container .redes p {
           padding: 10px 20px; } }
 
-@media (max-width: 576px) {
-  .header-iconoRegresar-container {
+/* VERSION DESKTOP --------  */
+.header-iconoRegresar-container {
+  display: none; }
+
+.header-pages {
+  display: flex;
+  justify-content: center; }
+
+.portfolio-container-paginas {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 50px; }
+  .portfolio-container-paginas .proyectos-descripcion {
+    display: grid;
+    grid-template-columns: 30% 70%; }
+    .portfolio-container-paginas .proyectos-descripcion p {
+      grid-column: 1;
+      margin: auto;
+      line-height: 30px;
+      text-align: left; }
+  .portfolio-container-paginas h3 {
+    text-align: center;
+    padding-bottom: 50px; }
+  .portfolio-container-paginas div {
     display: flex;
-    justify-content: center; }
-    .header-iconoRegresar-container a {
+    grid-column: 2; }
+    .portfolio-container-paginas div img {
+      width: 500px;
+      height: 400px;
+      margin: auto; }
+    .portfolio-container-paginas div .img-rectangular {
+      width: 700px;
+      height: 400px; }
+  .portfolio-container-paginas .btn-visitar-sitio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
+    margin: 0px; }
+    .portfolio-container-paginas .btn-visitar-sitio a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 0; }
+      .portfolio-container-paginas .btn-visitar-sitio a button {
+        padding: 15px;
+        font-size: 17px;
+        letter-spacing: 1.3px;
+        background: linear-gradient(45deg, red, #800000, #400000, black);
+        border: none;
+        color: white;
+        border-radius: 10px;
+        width: fit-content;
+        margin: 0;
+        font-weight: 900;
+        cursor: pointer; }
+        .portfolio-container-paginas .btn-visitar-sitio a button:hover {
+          opacity: 0.7; }
+
+.contacto-container {
+  padding: 0 20px 20px;
+  background: linear-gradient(45deg, red, #800000, #400000, black); }
+  .contacto-container h2 {
+    margin: 0 0 8px; }
+  .contacto-container .redes {
+    padding: 20px 0; }
+    .contacto-container .redes a i {
+      font-size: 25px;
       color: white; }
-      .header-iconoRegresar-container a i {
-        text-align: center; }
+    .contacto-container .redes p {
+      padding-top: 20px;
+      margin: 0 0 16px; }
+
+@media (max-width: 576px) {
+  .btn-regresar {
+    display: none; }
+  .header-pages {
+    display: grid;
+    grid-template-columns: 80% 20%; }
+    .header-pages .header-iconoRegresar-container {
+      display: flex;
+      justify-content: center; }
+      .header-pages .header-iconoRegresar-container a {
+        color: white; }
+        .header-pages .header-iconoRegresar-container a i {
+          text-align: center; }
   .portfolio-container-paginas {
     background-color: #1a1a1a;
-    color: white; }
+    color: white;
+    padding: 0px; }
+    .portfolio-container-paginas .proyectos-descripcion {
+      display: flex;
+      flex-direction: column; }
     .portfolio-container-paginas p {
       padding: 40px 50px;
       text-align: left;

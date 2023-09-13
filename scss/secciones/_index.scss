@@ -33,12 +33,12 @@ header {
         a {
           text-decoration: none;
           color: white;
-
-
         }
 
         &:hover {
           background: linear-gradient(45deg, red, #800000, #400000, black);
+          border-radius: 8px;
+          
         }
       }
     }
@@ -232,6 +232,24 @@ header {
           border-radius: 0;
           background-color: gray;
           padding: 50px;
+
+          a {
+            padding: 15px;
+            font-size: 17px;
+            letter-spacing: 1.3px;
+            background: linear-gradient(45deg, red, #800000, #400000, black);
+            border: none;
+            color: white;
+            border-radius: 10px;
+            width: fit-content;
+            margin: 0;
+            font-weight: 900;
+            cursor: pointer;
+    
+            &:hover {
+              opacity: 0.7;
+            }
+          }
 
           img {
             max-width: 70%;
@@ -566,6 +584,24 @@ header {
         .card{
           background-color: gray;
           height: 300px;
+
+          a {
+            padding: 15px;
+            font-size: 17px;
+            letter-spacing: 1.3px;
+            background: linear-gradient(45deg, red, #800000, #400000, black);
+            border: none;
+            color: white;
+            border-radius: 10px;
+            width: fit-content;
+            margin: 0;
+            font-weight: 900;
+            cursor: pointer;
+    
+            &:hover {
+              opacity: 0.7;
+            }
+          }
 
           img {
             max-width: 70%;

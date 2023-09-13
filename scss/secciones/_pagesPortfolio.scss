@@ -1,13 +1,123 @@
-@media (max-width: 576px) {
-  .header-iconoRegresar-container {
+/* VERSION DESKTOP --------  */
+
+.header-iconoRegresar-container {
+  display: none;
+}
+.header-pages {
+  display: flex;
+
+  justify-content: center;
+}
+
+.portfolio-container-paginas {
+  background-color: rgba(26, 26, 26, 1);
+  color: white;
+  padding: 50px;
+  .proyectos-descripcion {
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    p {
+      grid-column: 1;
+      margin: auto;
+      line-height: 30px;
+      text-align: left;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  div {
     display: flex;
-    justify-content: center;
+    grid-column: 2;
+
+    img {
+      width: 500px;
+      height: 400px;
+      margin: auto;
+    }
+    .img-rectangular {
+      width: 700px;
+      height: 400px;
+    }
+  }
+
+  .btn-visitar-sitio {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
+    margin: 0px;
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 0;
+
+      button {
+        padding: 15px;
+        font-size: 17px;
+        letter-spacing: 1.3px;
+        background: linear-gradient(45deg, red, #800000, #400000, black);
+        border: none;
+        color: white;
+        border-radius: 10px;
+        width: fit-content;
+        margin: 0;
+        font-weight: 900;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+.contacto-container {
+  padding: 0 20px 20px;
+  background: linear-gradient(45deg, red, #800000, #400000, black);
+
+  h2 {
+    margin: 0 0 8px;
+  }
+  .redes {
+    padding: 20px 0;
 
     a {
-      color: white;
-
       i {
-        text-align: center;
+        font-size: 25px;
+        color: white;
+      }
+    }
+
+    p {
+      padding-top: 20px;
+      margin: 0 0 16px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-regresar {
+    display: none;
+  }
+  .header-pages {
+    display: grid;
+    grid-template-columns: 80% 20%;
+
+    .header-iconoRegresar-container {
+      display: flex;
+      justify-content: center;
+
+      a {
+        color: white;
+
+        i {
+          text-align: center;
+        }
       }
     }
   }
@@ -15,6 +125,12 @@
   .portfolio-container-paginas {
     background-color: rgba(26, 26, 26, 1);
     color: white;
+    padding: 0px;
+
+    .proyectos-descripcion {
+      display: flex;
+      flex-direction: column;
+    }
 
     p {
       padding: 40px 50px;
