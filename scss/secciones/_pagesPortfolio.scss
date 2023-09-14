@@ -1,6 +1,6 @@
 /* VERSION DESKTOP --------  */
 
-.header-iconoRegresar-container {
+.header-iconoRegresar-container, .img-mobile {
   display: none;
 }
 .header-pages {
@@ -38,7 +38,7 @@
       height: 400px;
       margin: auto;
     }
-    .img-rectangular {
+    .img-desktop {
       width: 700px;
       height: 400px;
     }
@@ -101,7 +101,7 @@
 }
 
 @media (max-width: 576px) {
-  .btn-regresar {
+  .btn-regresar,.img-desktop {
     display: none;
   }
   .header-pages {
@@ -146,10 +146,12 @@
     div {
       display: flex;
 
-      img {
+      .img-mobile {
+        display: block;
         width: 80%;
         margin: auto;
       }
+      
     }
 
     .btn-visitar-sitio {
