@@ -12,37 +12,54 @@
 .portfolio-container-mobile {
   display: none; }
 
-header {
-  background-color: black;
-  display: grid;
+.header-background {
+  /* background-color: black; */
+  /* display: grid; */
   font-size: 20px;
-  grid-template-columns: 20% 80%;
-  padding: 40px;
-  color: white; }
-  header .header-info-portfolio {
+  /* grid-template-columns: 20% 80%; */
+  padding: 10px 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../../imagenes/desktop/ancash-huaraz.jpg");
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  color: black;
+  height: 80vh; }
+  .header-background .header-container-fotoTitulo {
+    padding-top: 10vh; }
+    .header-background .header-container-fotoTitulo .header-background-foto {
+      margin: auto;
+      text-align: center; }
+      .header-background .header-container-fotoTitulo .header-background-foto .header-foto {
+        width: 200px; }
+    .header-background .header-container-fotoTitulo .header-titulos {
+      text-align: center;
+      color: white; }
+      .header-background .header-container-fotoTitulo .header-titulos h1 {
+        color: #d96959; }
+  .header-background .header-info-portfolio {
     margin: auto 0; }
-    header .header-info-portfolio ul {
+    .header-background .header-info-portfolio ul {
       display: flex;
       justify-content: space-around;
       padding: 0;
       margin: 0; }
-      header .header-info-portfolio ul li {
+      .header-background .header-info-portfolio ul li {
         list-style: none;
         cursor: pointer; }
-        header .header-info-portfolio ul li a {
+        .header-background .header-info-portfolio ul li a {
           text-decoration: none;
           color: white; }
-        header .header-info-portfolio ul li:hover {
+        .header-background .header-info-portfolio ul li:hover {
           background: linear-gradient(45deg, red, #800000, #400000, black);
           border-radius: 8px; }
-  header .header-nombre-portfolio {
+  .header-background .header-nombre-portfolio {
     padding-right: 20px;
     margin-left: 10px;
     width: fit-content; }
-    header .header-nombre-portfolio a {
+    .header-background .header-nombre-portfolio a {
       color: white;
       text-decoration: none; }
-      header .header-nombre-portfolio a p {
+      .header-background .header-nombre-portfolio a p {
         margin: 0; }
 
 .todo-el-contenido {
@@ -301,7 +318,8 @@ header {
     .todo-el-contenido .sobreMi-container,
     .todo-el-contenido .portfolio-container,
     .todo-el-contenido .contacto-container,
-    .todo-el-contenido .idiomas-mobile, .todo-el-contenido .portfolio-container-mobile {
+    .todo-el-contenido .idiomas-mobile,
+    .todo-el-contenido .portfolio-container-mobile {
       text-align: center;
       padding: 50px 0;
       float: none;
@@ -310,7 +328,8 @@ header {
       .todo-el-contenido .sobreMi-container h2,
       .todo-el-contenido .portfolio-container h2,
       .todo-el-contenido .contacto-container h2,
-      .todo-el-contenido .idiomas-mobile h2, .todo-el-contenido .portfolio-container-mobile h2 {
+      .todo-el-contenido .idiomas-mobile h2,
+      .todo-el-contenido .portfolio-container-mobile h2 {
         font-size: 30px;
         position: relative;
         padding-top: 10px; }
@@ -318,7 +337,8 @@ header {
         .todo-el-contenido .sobreMi-container h2::after,
         .todo-el-contenido .portfolio-container h2::after,
         .todo-el-contenido .contacto-container h2::after,
-        .todo-el-contenido .idiomas-mobile h2::after, .todo-el-contenido .portfolio-container-mobile h2::after {
+        .todo-el-contenido .idiomas-mobile h2::after,
+        .todo-el-contenido .portfolio-container-mobile h2::after {
           content: "";
           position: absolute;
           bottom: -5px;
@@ -334,7 +354,8 @@ header {
       .todo-el-contenido .sobreMi-container i,
       .todo-el-contenido .portfolio-container i,
       .todo-el-contenido .contacto-container i,
-      .todo-el-contenido .idiomas-mobile i, .todo-el-contenido .portfolio-container-mobile i {
+      .todo-el-contenido .idiomas-mobile i,
+      .todo-el-contenido .portfolio-container-mobile i {
         color: white; }
     .todo-el-contenido .sobreMi-container {
       display: flex;
@@ -372,12 +393,14 @@ header {
         grid-column: 3; }
     .todo-el-contenido .estudios p,
     .todo-el-contenido .estudios-especializaciones p,
-    .todo-el-contenido .idiomas-desktop p, .todo-el-contenido .portfolio-container-mobile p {
+    .todo-el-contenido .idiomas-desktop p,
+    .todo-el-contenido .portfolio-container-mobile p {
       padding: 0 50px;
       font-size: 18px; }
     .todo-el-contenido .estudios h2,
     .todo-el-contenido .estudios-especializaciones h2,
-    .todo-el-contenido .idiomas-desktop h2, .todo-el-contenido .portfolio-container-mobile h2 {
+    .todo-el-contenido .idiomas-desktop h2,
+    .todo-el-contenido .portfolio-container-mobile h2 {
       font-size: 30px; }
     .todo-el-contenido .estudios {
       padding: 25px 0; }
