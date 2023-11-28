@@ -57,3 +57,52 @@ function mostrarOcultar(menu, todoContenido){
     todoContenido.classList.toggle("oculto");
 
 }
+
+
+
+
+
+
+let btnVerMasDesarrolloHtml= document.getElementById('btnVerMasDesarrollo');
+let btnVerMasJsHtml= document.getElementById('btnVerMasJs');
+let btnVerMasReactHtml= document.getElementById('btnVerMasReact');
+let btnVerMasWpHtml= document.getElementById('btnVerMasWp');
+let cardIconos= document.getElementById("cardIconos");
+let cardInfo= document.getElementById("cardInfo");
+let cardBodyHtml= document.getElementById("cardBody");
+let cardFlip= document.getElementById("cardFlip");
+let descripcionDesarrollo= "08 semanas en donde se desarrollaron temas como Html5, Css3, Sass, Bootstrap, entre otros";
+let descripcionJs= "08 semanas en donde se desarrollaron lógica de javaScript";
+let descripcionReact= "Cursando actualmente (08 semanas)";
+let descripcionWp= "Cursando actualmente (08 semanas)";
+let coderHouse= "CoderHouse";
+
+
+
+btnVerMasDesarrolloHtml.addEventListener('click', ()=> flipCard (cardIconos ,cardInfo, cardBodyHtml,cardFlip, "Desarrollo web" ,coderHouse, descripcionDesarrollo))
+btnVerMasJsHtml.addEventListener('click', ()=> flipCard (cardIconos ,cardInfo, cardBodyHtml,cardFlip, "JavaScript" ,coderHouse, descripcionJs));
+
+
+
+function flipCard(cardIconos ,cardInfo, cardBodyHtml,cardFlip, cardTitle, cardInstitute, cardDescription){
+  
+  cardIconos.classList.toggle('oculto');
+
+  cardInfo.innerHTML = `<h5 class="card-title">${cardTitle}</h5>
+  <card-text>${cardInstitute}</card-text>
+  <div class="card-iconos">
+  <card-text> ${cardDescription} </card-text>
+  </div>`
+
+  cardInfo.classList.toggle('oculto')
+  cardBodyHtml.classList.toggle('oculto')
+  cardFlip.classList.add("animate__animated", "animate__flipInY");
+
+  setTimeout(() => {
+    cardFlip.classList.remove("animate__animated", "animate__flipInY");
+  }, 1000);
+
+  
+
+
+}

@@ -6,6 +6,9 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 /* VERSION DESKTOP --------  */
+.oculto {
+  display: none; }
+
 .header-menuHamburguesa-container,
 .header-info-mobile,
 .idiomas-mobile,
@@ -37,12 +40,19 @@
       .header-background .header-container-fotoTitulo .header-titulos h1 {
         color: #d96959; }
   .header-background .header-info-portfolio {
-    margin: auto 0; }
+    /* margin: auto 0; */
+    display: grid;
+    grid-template-columns: 30% 70%; }
+    .header-background .header-info-portfolio .header-logo {
+      grid-column: 1;
+      width: 100%; }
     .header-background .header-info-portfolio ul {
+      grid-column: 2;
       display: flex;
       justify-content: space-around;
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      width: 100%; }
       .header-background .header-info-portfolio ul li {
         list-style: none;
         cursor: pointer; }
@@ -63,7 +73,8 @@
         margin: 0; }
 
 .todo-el-contenido {
-  background-color: #1a1a1a;
+  /* background-color: rgba(26, 26, 26, 1); */
+  background-color: #1f2233;
   color: white;
   text-align: center;
   padding: 40px 0px 0; }
@@ -100,7 +111,8 @@
   .todo-el-contenido .seccion2-desktop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background: linear-gradient(45deg, red, #800000, #400000, black);
+    /* background: linear-gradient(45deg, red, #800000, #400000, black); */
+    background-color: #25273e;
     padding: 0 80px 80px; }
     .todo-el-contenido .seccion2-desktop ul {
       grid-column: 2; }
@@ -141,7 +153,7 @@
     .todo-el-contenido .estudios-especializaciones h2 {
       font-size: 30px;
       position: relative;
-      padding-top: 50px; }
+      padding-top: 0px; }
       .todo-el-contenido .estudios h2::after,
       .todo-el-contenido .sobreMi-container h2::after,
       .todo-el-contenido .portfolio-container-desktop h2::after,
@@ -166,14 +178,48 @@
     .todo-el-contenido .idiomas i,
     .todo-el-contenido .estudios-especializaciones i {
       color: white; }
-  .todo-el-contenido .carousel-inner {
+  .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner {
     padding: 5em; }
-    .todo-el-contenido .carousel-inner .carousel-item {
+    .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item {
       max-width: 100%; }
-      .todo-el-contenido .carousel-inner .carousel-item .cards-container {
+      .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container {
+        display: flex;
+        justify-content: space-around;
+        min-height: 304px; }
+        .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container .card {
+          max-width: calc(100%/2);
+          margin: 0 2em;
+          box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+          border: 1px solid #423949;
+          border-radius: 0;
+          background-color: #1f2233;
+          padding: 25px; }
+          .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container .card .card-body {
+            width: 200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white; }
+            .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container .card .card-body .card-text {
+              padding: 0; }
+          .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container .card .card-iconos {
+            width: 100%;
+            display: flex;
+            justify-content: space-around; }
+            .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container .card .card-iconos i {
+              font-size: 3rem; }
+          .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container .card .oculto {
+            display: none; }
+  .todo-el-contenido #carouselExampleIndicators2 .carousel-inner {
+    padding: 5em; }
+    .todo-el-contenido #carouselExampleIndicators2 .carousel-inner .carousel-item {
+      max-width: 100%; }
+      .todo-el-contenido #carouselExampleIndicators2 .carousel-inner .carousel-item .cards-container {
         display: flex;
         justify-content: space-evenly; }
-        .todo-el-contenido .carousel-inner .carousel-item .cards-container .card {
+        .todo-el-contenido #carouselExampleIndicators2 .carousel-inner .carousel-item .cards-container .card {
           max-width: calc(100%/3);
           margin: 0 2em;
           box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
@@ -181,7 +227,7 @@
           border-radius: 0;
           background-color: gray;
           padding: 50px; }
-          .todo-el-contenido .carousel-inner .carousel-item .cards-container .card a {
+          .todo-el-contenido #carouselExampleIndicators2 .carousel-inner .carousel-item .cards-container .card a {
             padding: 15px;
             font-size: 17px;
             letter-spacing: 1.3px;
@@ -193,14 +239,14 @@
             margin: 0;
             font-weight: 900;
             cursor: pointer; }
-            .todo-el-contenido .carousel-inner .carousel-item .cards-container .card a:hover {
+            .todo-el-contenido #carouselExampleIndicators2 .carousel-inner .carousel-item .cards-container .card a:hover {
               opacity: 0.7; }
-          .todo-el-contenido .carousel-inner .carousel-item .cards-container .card img {
+          .todo-el-contenido #carouselExampleIndicators2 .carousel-inner .carousel-item .cards-container .card img {
             max-width: 70%;
             height: 110px;
             margin: auto; }
-  .todo-el-contenido .carousel-control-prev,
-  .todo-el-contenido .carousel-control-next {
+  .todo-el-contenido #carouselExampleIndicators2 .carousel-control-prev,
+  .todo-el-contenido #carouselExampleIndicators2 .carousel-control-next {
     background-color: gray;
     width: 5vh;
     height: 5vh;

@@ -1,4 +1,7 @@
 /* VERSION DESKTOP --------  */
+.oculto{
+  display: none;
+}
 
 .header-menuHamburguesa-container,
 .header-info-mobile,
@@ -14,48 +17,57 @@
   /* grid-template-columns: 20% 80%; */
   padding: 10px 40px;
   background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
-  url("../../imagenes/desktop/ancash-huaraz.jpg");
+    url("../../imagenes/desktop/ancash-huaraz.jpg");
   background-position: center center;
   background-repeat: none;
   background-size: cover;
   color: black;
   height: 80vh;
 
-  .header-container-fotoTitulo{
+  .header-container-fotoTitulo {
     padding-top: 10vh;
 
-    .header-background-foto{
+    .header-background-foto {
       margin: auto;
       text-align: center;
-      
-  
-      .header-foto{
+
+
+      .header-foto {
         width: 200px;
       }
-    
-      
+
+
     }
-    .header-titulos{
+
+    .header-titulos {
       text-align: center;
       color: white;
-  
-      h1{
-        color: rgb(217,105,89);
+
+      h1 {
+        color: rgb(217, 105, 89);
       }
     }
   }
-  
+
 
 
   .header-info-portfolio {
-    margin: auto 0;
+    /* margin: auto 0; */
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    .header-logo {
+      grid-column: 1;
+      width: 100%;
+    }
 
     ul {
-
+      grid-column: 2;
       display: flex;
       justify-content: space-around;
       padding: 0;
       margin: 0;
+      width: 100%;
 
       li {
         list-style: none;
@@ -100,7 +112,8 @@
 
 
 .todo-el-contenido {
-  background-color: rgba(26, 26, 26, 1);
+  /* background-color: rgba(26, 26, 26, 1); */
+  background-color: rgb(31,34,51);
   color: white;
   text-align: center;
   padding: 40px 0px 0;
@@ -167,7 +180,8 @@
   .seccion2-desktop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background: linear-gradient(45deg, red, #800000, #400000, black);
+    /* background: linear-gradient(45deg, red, #800000, #400000, black); */
+    background-color: rgb(37,39,62);
     padding: 0 80px 80px;
 
     ul {
@@ -230,7 +244,7 @@
     h2 {
       font-size: 30px;
       position: relative;
-      padding-top: 50px;
+      padding-top: 0px;
 
       &::after {
         content: "";
@@ -252,62 +266,128 @@
     }
   }
 
-  .carousel-inner {
-    padding: 5em;
 
-    .carousel-item {
-      max-width: 100%;
+  .estudios-especializaciones {
 
-      .cards-container {
-        display: flex;
-        justify-content: space-evenly;
+    #carouselExampleIndicators{
+      .carousel-inner {
+        padding: 5em;
+    
+        .carousel-item {
+          max-width: 100%;
+    
+          .cards-container {
+            display: flex;
+            justify-content: space-around;
+            min-height: 304px;
+    
+            .card {
+              max-width: calc(100%/2);
+              margin: 0 2em;
+              box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+              border: 1px solid rgb(66,57,73);
+              border-radius: 0;
+              background-color: rgb(31,34,51);
+              padding: 25px;
+              
 
-        .card {
-          max-width: calc(100%/3);
-          margin: 0 2em;
-          box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-          border: none;
-          border-radius: 0;
-          background-color: gray;
-          padding: 50px;
-
-          a {
-            padding: 15px;
-            font-size: 17px;
-            letter-spacing: 1.3px;
-            background: linear-gradient(45deg, red, #800000, #400000, black);
-            border: none;
-            color: white;
-            border-radius: 10px;
-            width: fit-content;
-            margin: 0;
-            font-weight: 900;
-            cursor: pointer;
-
-            &:hover {
-              opacity: 0.7;
+              .card-body{
+                width: 200px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                
+                
+                
+                .card-text{
+                  padding: 0;
+                }
+              }
+              .card-iconos{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                i{
+                  font-size: 3rem;
+                }
+              }
+              .oculto{
+                display: none;
+              }
+    
+         
             }
+            
           }
+        }
+      }
+      
+    }
+    
+  }
 
-          img {
-            max-width: 70%;
-            height: 110px;
-            margin: auto;
+  #carouselExampleIndicators2{
+    .carousel-inner {
+      padding: 5em;
+  
+      .carousel-item {
+        max-width: 100%;
+  
+        .cards-container {
+          display: flex;
+          justify-content: space-evenly;
+  
+          .card {
+            max-width: calc(100%/3);
+            margin: 0 2em;
+            box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+            border: none;
+            border-radius: 0;
+            background-color: gray;
+            padding: 50px;
+  
+            a {
+              padding: 15px;
+              font-size: 17px;
+              letter-spacing: 1.3px;
+              background: linear-gradient(45deg, red, #800000, #400000, black);
+              border: none;
+              color: white;
+              border-radius: 10px;
+              width: fit-content;
+              margin: 0;
+              font-weight: 900;
+              cursor: pointer;
+  
+              &:hover {
+                opacity: 0.7;
+              }
+            }
+  
+            img {
+              max-width: 70%;
+              height: 110px;
+              margin: auto;
+            }
           }
         }
       }
     }
+  
+    .carousel-control-prev,
+    .carousel-control-next {
+      background-color: gray;
+      width: 5vh;
+      height: 5vh;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    background-color: gray;
-    width: 5vh;
-    height: 5vh;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  
 
 
 
