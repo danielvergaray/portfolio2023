@@ -63,46 +63,67 @@ function mostrarOcultar(menu, todoContenido){
 
 
 
-let btnVerMasDesarrolloHtml= document.getElementById('btnVerMasDesarrollo');
-let btnVerMasJsHtml= document.getElementById('btnVerMasJs');
-let btnVerMasReactHtml= document.getElementById('btnVerMasReact');
-let btnVerMasWpHtml= document.getElementById('btnVerMasWp');
-let cardIconos= document.getElementById("cardIconos");
-let cardInfo= document.getElementById("cardInfo");
-let cardBodyHtml= document.getElementById("cardBody");
-let cardFlip= document.getElementById("cardFlip");
-let descripcionDesarrollo= "08 semanas en donde se desarrollaron temas como Html5, Css3, Sass, Bootstrap, entre otros";
-let descripcionJs= "08 semanas en donde se desarrollaron lógica de javaScript";
-let descripcionReact= "Cursando actualmente (08 semanas)";
-let descripcionWp= "Cursando actualmente (08 semanas)";
-let coderHouse= "CoderHouse";
+const cursos = [
+  {
+    btn: 'btnVerMasDesarrollo',
+    cardIconos: 'cardIconos',
+    cardInfo: 'cardInfoDesarrolo',
+    cardBody: 'cardBody',
+    cardFlip: 'cardFlip',
+    title: 'Desarrollo web',
+    institute: 'CoderHouse',
+    description: '08 semanas en donde se desarrollaron temas como Html5, Css3, Sass, Bootstrap, entre otros'
+  },
+  {
+    btn: 'btnVerMasJs',
+    cardIconos: 'cardIconosJs',
+    cardInfo: 'cardInfoJs',
+    cardBody: 'cardBodyJs',
+    cardFlip: 'cardFlipJs',
+    title: 'JavaScript',
+    institute: 'CoderHouse',
+    description: '08 semanas en donde se desarrollaron lógica de JavaScript'
+  },
+  {
+    btn: 'btnVerMasReact',
+    cardIconos: 'cardIconosReact',
+    cardInfo: 'cardInfoReact',
+    cardBody: 'cardBodyReact',
+    cardFlip: 'cardFlipReact',
+    title: 'React',
+    institute: 'CoderHouse',
+    description: 'xxx'
+  },
+  {
+    btn: 'btnVerMasWp',
+    cardIconos: 'cardIconosWp',
+    cardInfo: 'cardInfoWp',
+    cardBody: 'cardBodyWp',
+    cardFlip: 'cardFlipWp',
+    title: 'Wordpress',
+    institute: 'CoderHouse',
+    description: 'xxx'
+  },
+];
 
+cursos.forEach(curso => {
+  const btn = document.getElementById(curso.btn);
+  const cardIconos = document.getElementById(curso.cardIconos);
+  const cardInfo = document.getElementById(curso.cardInfo);
+  const cardBody = document.getElementById(curso.cardBody);
+  const cardFlip = document.getElementById(curso.cardFlip);
 
+  btn.addEventListener('click', () => flipCard(cardIconos, cardInfo, cardBody, cardFlip, curso.title, curso.institute, curso.description));
+});
 
-btnVerMasDesarrolloHtml.addEventListener('click', ()=> flipCard (cardIconos ,cardInfo, cardBodyHtml,cardFlip, "Desarrollo web" ,coderHouse, descripcionDesarrollo))
-btnVerMasJsHtml.addEventListener('click', ()=> flipCard (cardIconos ,cardInfo, cardBodyHtml,cardFlip, "JavaScript" ,coderHouse, descripcionJs));
-
-
-
-function flipCard(cardIconos ,cardInfo, cardBodyHtml,cardFlip, cardTitle, cardInstitute, cardDescription){
-  
+function flipCard(cardIconos, cardInfo, cardBody, cardFlip, title, institute, description) {
   cardIconos.classList.toggle('oculto');
-
-  cardInfo.innerHTML = `<h5 class="card-title">${cardTitle}</h5>
-  <card-text>${cardInstitute}</card-text>
-  <div class="card-iconos">
-  <card-text> ${cardDescription} </card-text>
-  </div>`
-
-  cardInfo.classList.toggle('oculto')
-  cardBodyHtml.classList.toggle('oculto')
-  cardFlip.classList.add("animate__animated", "animate__flipInY");
+  cardInfo.innerHTML = `<h5 class="card-title">${title}</h5><card-text>${institute}</card-text><div class="card-iconos"><card-text>${description}</card-text></div>`;
+  cardInfo.classList.toggle('oculto');
+  cardBody.classList.toggle('oculto');
+  cardFlip.classList.add('animate__animated', 'animate__flipInY');
 
   setTimeout(() => {
-    cardFlip.classList.remove("animate__animated", "animate__flipInY");
+    cardFlip.classList.remove('animate__animated', 'animate__flipInY');
   }, 1000);
-
-  
-
-
 }

@@ -113,7 +113,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     /* background: linear-gradient(45deg, red, #800000, #400000, black); */
     background-color: #25273e;
-    padding: 0 80px 80px; }
+    padding: 0 10px 10px; }
     .todo-el-contenido .seccion2-desktop ul {
       grid-column: 2; }
       .todo-el-contenido .seccion2-desktop ul li {
@@ -179,16 +179,17 @@
     .todo-el-contenido .estudios-especializaciones i {
       color: white; }
   .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner {
-    padding: 5em; }
+    padding: 1em; }
     .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item {
       max-width: 100%; }
       .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container {
         display: flex;
         justify-content: space-around;
-        min-height: 304px; }
+        min-height: 304px;
+        max-width: 100%; }
         .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container .card {
           max-width: calc(100%/2);
-          margin: 0 2em;
+          margin: 0 1em;
           box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
           border: 1px solid #423949;
           border-radius: 0;

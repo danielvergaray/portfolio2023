@@ -182,7 +182,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     /* background: linear-gradient(45deg, red, #800000, #400000, black); */
     background-color: rgb(37,39,62);
-    padding: 0 80px 80px;
+    padding: 0 10px 10px;
 
     ul {
       grid-column: 2;
@@ -271,7 +271,7 @@
 
     #carouselExampleIndicators{
       .carousel-inner {
-        padding: 5em;
+        padding: 1em;
     
         .carousel-item {
           max-width: 100%;
@@ -280,10 +280,11 @@
             display: flex;
             justify-content: space-around;
             min-height: 304px;
+            max-width: 100%;
     
             .card {
               max-width: calc(100%/2);
-              margin: 0 2em;
+              margin: 0 1em;
               box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
               border: 1px solid rgb(66,57,73);
               border-radius: 0;
