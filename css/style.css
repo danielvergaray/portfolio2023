@@ -73,7 +73,6 @@
         margin: 0; }
 
 .todo-el-contenido {
-  /* background-color: rgba(26, 26, 26, 1); */
   background-color: #1f2233;
   color: white;
   text-align: center;
@@ -108,35 +107,6 @@
         font-size: 18px; }
         .todo-el-contenido .sobreMi-container .texto-sobreMi p:nth-of-type(2) {
           padding-top: 0; }
-  .todo-el-contenido .seccion2-desktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* background: linear-gradient(45deg, red, #800000, #400000, black); */
-    background-color: #25273e;
-    padding: 0 10px 10px; }
-    .todo-el-contenido .seccion2-desktop ul {
-      grid-column: 2; }
-      .todo-el-contenido .seccion2-desktop ul li {
-        padding: 20px 0;
-        list-style: none;
-        text-align: left; }
-        .todo-el-contenido .seccion2-desktop ul li i {
-          margin-right: 10px; }
-      .todo-el-contenido .seccion2-desktop ul .titulo-instituto {
-        color: yellow;
-        padding-top: 0; }
-    .todo-el-contenido .seccion2-desktop h2 {
-      text-align: center; }
-    .todo-el-contenido .seccion2-desktop p {
-      text-align: left;
-      padding: 0 100px;
-      margin: 0; }
-    .todo-el-contenido .seccion2-desktop .primer-parrafo-estudios {
-      padding-top: 40px; }
-    .todo-el-contenido .seccion2-desktop .estudios-especializaciones {
-      grid-column: 2; }
-    .todo-el-contenido .seccion2-desktop .idiomas-desktop {
-      grid-column: 3; }
   .todo-el-contenido .estudios,
   .todo-el-contenido .sobreMi-container,
   .todo-el-contenido .portfolio-container-desktop,
@@ -178,41 +148,63 @@
     .todo-el-contenido .idiomas i,
     .todo-el-contenido .estudios-especializaciones i {
       color: white; }
-  .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner {
-    padding: 1em; }
-    .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item {
+  .todo-el-contenido .estudios-especializaciones {
+    background-color: #25273e;
+    padding: 20px 0 70px; }
+    .todo-el-contenido .estudios-especializaciones .btnMenu-container {
+      display: flex;
+      justify-content: center; }
+      .todo-el-contenido .estudios-especializaciones .btnMenu-container button {
+        margin: 10px;
+        padding: 0.375rem;
+        border-radius: 0.375rem;
+        background-color: #25273e;
+        color: white;
+        border: 1px solid #25273e; }
+      .todo-el-contenido .estudios-especializaciones .btnMenu-container .btn-seleccionado {
+        background-color: #eb5c4f; }
+    .todo-el-contenido .estudios-especializaciones .cards-container {
+      display: flex;
+      justify-content: space-evenly;
+      min-height: 304px;
       max-width: 100%; }
-      .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container {
-        display: flex;
-        justify-content: space-around;
-        min-height: 304px;
-        max-width: 100%; }
-        .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container .card {
-          max-width: calc(100%/2);
-          margin: 0 1em;
-          box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-          border: 1px solid #423949;
-          border-radius: 0;
-          background-color: #1f2233;
-          padding: 25px; }
-          .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container .card .card-body {
-            width: 200px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white; }
-            .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container .card .card-body .card-text {
-              padding: 0; }
-          .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container .card .card-iconos {
-            width: 100%;
-            display: flex;
-            justify-content: space-around; }
-            .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container .card .card-iconos i {
-              font-size: 3rem; }
-          .todo-el-contenido .estudios-especializaciones #carouselExampleIndicators .carousel-inner .carousel-item .cards-container .card .oculto {
-            display: none; }
+      .todo-el-contenido .estudios-especializaciones .cards-container .card {
+        max-width: calc(100%/2);
+        margin: 0 1em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: 1px solid #423949;
+        border-radius: 0;
+        background-color: #1f2233;
+        padding: 25px; }
+        .todo-el-contenido .estudios-especializaciones .cards-container .card .card-body {
+          width: 200px;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: white; }
+          .todo-el-contenido .estudios-especializaciones .cards-container .card .card-body .card-text {
+            padding: 0; }
+        .todo-el-contenido .estudios-especializaciones .cards-container .card .btnVerMas {
+          width: fit-content;
+          margin: auto;
+          border: none;
+          background-color: transparent; }
+          .todo-el-contenido .estudios-especializaciones .cards-container .card .btnVerMas i {
+            font-size: 40px; }
+        .todo-el-contenido .estudios-especializaciones .cards-container .card .card-iconos {
+          width: 100%;
+          display: flex;
+          justify-content: space-around; }
+          .todo-el-contenido .estudios-especializaciones .cards-container .card .card-iconos i {
+            font-size: 3rem; }
+          .todo-el-contenido .estudios-especializaciones .cards-container .card .card-iconos img {
+            width: 3rem; }
+        .todo-el-contenido .estudios-especializaciones .cards-container .card .oculto {
+          display: none; }
+    .todo-el-contenido .estudios-especializaciones .oculto {
+      display: none; }
   .todo-el-contenido #carouselExampleIndicators2 .carousel-inner {
     padding: 5em; }
     .todo-el-contenido #carouselExampleIndicators2 .carousel-inner .carousel-item {
@@ -256,7 +248,7 @@
     transform: translateY(-50%); }
   .todo-el-contenido .contacto-container {
     padding: 0 20px 20px;
-    background: linear-gradient(45deg, red, #800000, #400000, black); }
+    background-color: #25273e; }
     .todo-el-contenido .contacto-container .redes {
       padding: 20px 0; }
       .todo-el-contenido .contacto-container .redes a i {
@@ -361,30 +353,24 @@
         .todo-el-contenido main .main-secundaria .redes i {
           font-size: 20px;
           color: white; }
-    .todo-el-contenido .estudios,
     .todo-el-contenido .sobreMi-container,
     .todo-el-contenido .portfolio-container,
     .todo-el-contenido .contacto-container,
-    .todo-el-contenido .idiomas-mobile,
     .todo-el-contenido .portfolio-container-mobile {
       text-align: center;
       padding: 50px 0;
       float: none;
       width: 100%; }
-      .todo-el-contenido .estudios h2,
       .todo-el-contenido .sobreMi-container h2,
       .todo-el-contenido .portfolio-container h2,
       .todo-el-contenido .contacto-container h2,
-      .todo-el-contenido .idiomas-mobile h2,
       .todo-el-contenido .portfolio-container-mobile h2 {
         font-size: 30px;
         position: relative;
         padding-top: 10px; }
-        .todo-el-contenido .estudios h2::after,
         .todo-el-contenido .sobreMi-container h2::after,
         .todo-el-contenido .portfolio-container h2::after,
         .todo-el-contenido .contacto-container h2::after,
-        .todo-el-contenido .idiomas-mobile h2::after,
         .todo-el-contenido .portfolio-container-mobile h2::after {
           content: "";
           position: absolute;
@@ -397,11 +383,9 @@
           background-color: red;
           /* Cambia esto para cambiar el color del subrayado */
           left: 50%; }
-      .todo-el-contenido .estudios i,
       .todo-el-contenido .sobreMi-container i,
       .todo-el-contenido .portfolio-container i,
       .todo-el-contenido .contacto-container i,
-      .todo-el-contenido .idiomas-mobile i,
       .todo-el-contenido .portfolio-container-mobile i {
         color: white; }
     .todo-el-contenido .sobreMi-container {
@@ -427,35 +411,6 @@
         font-size: 18px; }
         .todo-el-contenido .sobreMi-container .texto-sobreMi p:nth-of-type(2) {
           padding-top: 0; }
-    .todo-el-contenido .seccion2-desktop {
-      display: flex;
-      flex-direction: column;
-      background: linear-gradient(45deg, red, #800000, #400000, black);
-      padding: 0px; }
-      .todo-el-contenido .seccion2-desktop .primer-parrafo-estudios {
-        padding-top: 40px; }
-      .todo-el-contenido .seccion2-desktop .estudios-especializaciones {
-        grid-column: 2; }
-      .todo-el-contenido .seccion2-desktop .idiomas-desktop {
-        grid-column: 3; }
-    .todo-el-contenido .estudios p,
-    .todo-el-contenido .estudios-especializaciones p,
-    .todo-el-contenido .idiomas-desktop p,
-    .todo-el-contenido .portfolio-container-mobile p {
-      padding: 0 50px;
-      font-size: 18px; }
-    .todo-el-contenido .estudios h2,
-    .todo-el-contenido .estudios-especializaciones h2,
-    .todo-el-contenido .idiomas-desktop h2,
-    .todo-el-contenido .portfolio-container-mobile h2 {
-      font-size: 30px; }
-    .todo-el-contenido .estudios {
-      padding: 25px 0; }
-    .todo-el-contenido .estudios-especializaciones h2,
-    .todo-el-contenido .idiomas-desktop h2 {
-      padding-top: 25px; }
-    .todo-el-contenido .idiomas-desktop {
-      padding-bottom: 40px; }
     .todo-el-contenido .portfolio-container-mobile {
       display: block; }
       .todo-el-contenido .portfolio-container-mobile .carousel-inner {
@@ -467,7 +422,6 @@
             padding: 15px;
             font-size: 17px;
             letter-spacing: 1.3px;
-            background: linear-gradient(45deg, red, #800000, #400000, black);
             border: none;
             color: white;
             border-radius: 10px;
@@ -551,7 +505,7 @@
 
 .contacto-container {
   padding: 0 20px 20px;
-  background: linear-gradient(45deg, red, #800000, #400000, black); }
+   }
   .contacto-container h2 {
     margin: 0 0 8px; }
   .contacto-container .redes {

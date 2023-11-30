@@ -56,12 +56,6 @@
   <section id="todoElContenido" class="todo-el-contenido">
     <main>
       <section class="main-principal">
-        <!-- <div class="main-titulo-contenedor">
-          <h1>
-            ¡Hola! Bienvenid@ a mi portfolio, soy Daniel,<br /> Frontend
-            Developer Jr.
-          </h1>
-        </div> -->
 
       </section>
 
@@ -107,192 +101,149 @@
 
     </section>
 
-    <section class="seccion2-desktop">
+   
+    <section class="estudios-especializaciones">
+      <div class="btnMenu-container">
+        <button class="btn-seleccionado" id="btnCursos">Cursos</button>
+        <button id="btnIdiomas">Idiomas</button>
+      </div>
 
+      <div id="cursosContainer" class="cards-container">
 
-      <!-- <section class="estudios" id="estudiosId">
-        <h2 class="animate__animated animate__fadeIn">Estudios</h2>
-        <p data-aos="fade-up" class="primer-parrafo-estudios">
-          Soy una persona trabajadora y dedicada, considero que más importante
-          que el talento es la dedicación y el constante aprendizaje.</p><br>
-        <p>Por ende, he llevado varios cursos y especializaciones, incluidos varios cursos de idiomas, por lo cual puedo
-          desempeñarme en mas de un idiomas.</p><br>
-        <p>Te cuento cuales son los cursos que he tomado en esta etapa.</p>
-
-
-
-      </section> -->
-      <section class="estudios-especializaciones">
-        <!-- <h2>Cursos</h3>
-          <ul data-aos="flip-left" class="lista-cursos">
-            <li><i class="fa-solid fa-check"></i>Desarrollo web</li>
-            <p class="titulo-instituto">CoderHouse</p>
-            <p>
-              08 semanas en donde se desarrollaron temas como Html5, Css3, Sass,
-              Bootstrap, entre otros.
-            </p>
-
-            <li><i class="fa-solid fa-check"></i>javaScript</li>
-            <p class="titulo-instituto">CoderHouse</p>
-            <p>08 semanas en donde se desarrollaron lógica de javaScript.</p>
-
-            <li><i class="fa-solid fa-check"></i>React</li>
-            <p class="titulo-instituto">CoderHouse</p>
-            <p>Cursando actualmente (08 semanas).</p>
-
-            <li><i class="fa-solid fa-check" id="idiomasId"></i>WordPress</li>
-            <p class="titulo-instituto">CoderHouse</p>
-            <p>Proxímamente.</p>
-
-            <li><i class="fa-solid fa-check"></i>Vue js</li>
-            <p class="titulo-instituto">Udemy</p>
-            <p>Proxímamente.</p>
-          </ul> -->
-
-          <div id="carouselExampleIndicators" class="carousel slide">
-            
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-    
-            </div>
-            <div class="carousel-inner">
-              
-              <div class="carousel-item active">
-                <h2>Cursos</h2>
-                <div class="cards-container">
-
-                  <div class="card" id="cardFlip">
-                    <div class="oculto card-body" id="cardInfoDesarrolo">
-                    </div>
-                    <div class="card-iconos" id="cardIconos">
-                      <i class="fa-brands fa-html5"></i>
-                      <i class="fa-brands fa-css3-alt"></i>
-                      <i class="fa-brands fa-bootstrap"></i>
-                    </div>
-                    
-                    <div class="card-body">
-                      <h5 class="card-title" id="cardBody">Desarrollo web</h5>
-                    
-                    </div>
-                    <button class="btn btn-primary" id="btnVerMasDesarrollo">Ver más</button>
-                  </div>
-
-                  <div class="card" id="cardFlipJs">
-                    <div class="oculto card-body" id="cardInfoJs">
-                    </div>
-                    <div class="card-iconos" id="cardIconosJs">
-                      <i class="fa-brands fa-js"></i>
-                      
-                    </div>
-                    
-                    <div class="card-body">
-                      <h5 class="card-title" id="cardBodyJs">javaScript</h5>
-                    
-                    </div>
-                    <button class="btn btn-primary" id="btnVerMasJs">Ver más</button>
-                  </div>
-                  <div class="card" id="cardFlipReact">
-                    <div class="oculto card-body" id="cardInfoReact">
-                    </div>
-                    <div class="card-iconos" id="cardIconosReact">
-                      <i class="fa-brands fa-react"></i>
-                      
-                    </div>
-                    
-                    <div class="card-body">
-                      <h5 class="card-title" id="cardBodyReact">React</h5>
-                    
-                    </div>
-                    <button class="btn btn-primary" id="btnVerMasReact">Ver más</button>
-                  </div>
-                  <div class="card" id="cardFlipWp">
-                    <div class="oculto card-body" id="cardInfoWp">
-                    </div>
-                    <div class="card-iconos" id="cardIconosWp">
-                      <i class="fa-brands fa-wordpress"></i>
-                      
-                    </div>
-                    
-                    <div class="card-body">
-                      <h5 class="card-title" id="cardBodyWp">WordPress</h5>
-                    
-                    </div>
-                    <button class="btn btn-primary" id="btnVerMasWp">Ver más</button>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="carousel-item">
-                <h2>Idiomas</h2>
-                <div class="cards-container">
-                  <div class="card">
-                    <div class="card-iconos">
-                      <img src="./imagenes/spanish-flag.png" alt="">
-                    </div>
-                    
-                    <div class="card-body">
-                      <h5 class="card-title">Español</h5>
-      
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-iconos">
-                      <img src="./imagenes/usa-flag.png" alt="">
-                    </div>
-                    
-                    <div class="card-body">
-                      <h5 class="card-title">Inglés</h5>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-iconos">
-                      <img src="./imagenes/french-flag.png" alt="">
-                    </div>
-                    
-                    <div class="card-body">
-                      <h5 class="card-title">Francés</h5>
-                      
-                      
-                    </div>
-                  </div>
-                  
-                </div>
-              </div> -->
-    
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+        <div class="card" id="cardFlip">
+          <div class="oculto card-body" id="cardInfoDesarrolo">
           </div>
 
-      </section>
-      <!-- <section class="idiomas idiomas-desktop">
-        <h2 class="animate__animated animate__fadeIn">Idiomas</h2>
-        <p data-aos="fade-up" class="primer-parrafo-estudios">
-          Siendo el español mi idioma nativo, he estudiado otros idiomas a lo largo de los años.
-        </p>
-        <ul data-aos="flip-left">
-          <li><i class="fa-solid fa-check"></i>Inglés</li>
-          <p>
-            Más de 10 años de estudios contantes del idioma. Los estudios fueron realizados en reconocidos institutos en
-            Venezuela y Perú, ademas de poseer cursos de docencia en el idioma Inglés.
-          </p>
+          <div class="card-iconos" id="cardIconos">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-bootstrap"></i>
+          </div>
 
-          <li><i class="fa-solid fa-check"></i>Francés</li>
-          <p>01 año de estudio en la alianza francesa con sede en Venezuela.</p>
+          <div class="card-body">
+            <h5 class="card-title" id="cardBody">Desarrollo web</h5>
 
-        </ul>
-      </section> -->
+          </div>
+          <button class="btnVerMas" id="btnVerMasDesarrollo">
+            <i id="iconoVerMasDesarrollo" class="fa-solid  fa-hand-point-right animate__animated animate__shakeX"
+              style="color: #eb5c4f;"></i>
+          </button>
+        </div>
+
+        <div class="card" id="cardFlipJs">
+          <div class="oculto card-body" id="cardInfoJs">
+          </div>
+          <div class="card-iconos" id="cardIconosJs">
+            <i class="fa-brands fa-js"></i>
+
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title" id="cardBodyJs">javaScript</h5>
+
+          </div>
+          <button class="btnVerMas" id="btnVerMasJs">
+            <i id="iconoVerMasJs" class="fa-solid  fa-hand-point-right animate__animated animate__shakeX"
+              style="color: #eb5c4f;"></i>
+          </button>
+        </div>
+        <div class="card" id="cardFlipReact">
+          <div class="oculto card-body" id="cardInfoReact">
+          </div>
+          <div class="card-iconos" id="cardIconosReact">
+            <i class="fa-brands fa-react"></i>
+
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title" id="cardBodyReact">React</h5>
+
+          </div>
+          <button class="btnVerMas" id="btnVerMasReact">
+            <i id="iconoVerMasReact" class="fa-solid  fa-hand-point-right animate__animated animate__shakeX"
+              style="color: #eb5c4f;"></i>
+          </button>
+        </div>
+        <div class="card" id="cardFlipWp">
+          <div class="oculto card-body" id="cardInfoWp">
+          </div>
+          <div class="card-iconos" id="cardIconosWp">
+            <i class="fa-brands fa-wordpress"></i>
+
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title" id="cardBodyWp">WordPress</h5>
+
+          </div>
+          <button class="btnVerMas" id="btnVerMasWp">
+            <i id="iconoVerMasWp" class="fa-solid  fa-hand-point-right animate__animated animate__shakeX"
+              style="color: #eb5c4f;"></i>
+          </button>
+        </div>
+      </div>
+      <div id="idiomasContainer" class="cards-container oculto ">
+
+        <div class="card" id="cardFlipEspaniol">
+          <div class="oculto card-body" id="cardInfoEspaniol">
+          </div>
+
+          <div class="card-iconos" id="cardIconosEspaniol">
+            <img src="./imagenes/spanish-flag.png" alt="">
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title" id="cardBodyEspaniol">Español</h5>
+
+          </div>
+          <button class="btnVerMas" id="btnVerMasEspaniol">
+            <i id="iconoVerMasEsp" class="fa-solid  fa-hand-point-right animate__animated animate__shakeX"
+              style="color: #eb5c4f;"></i>
+          </button>
+        </div>
+
+        <div class="card" id="cardFlipIngles">
+          <div class="oculto card-body" id="cardInfoIngles">
+          </div>
+          <div class="card-iconos" id="cardIconosIngles">
+            <img src="./imagenes/usa-flag.png" alt="">
+
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title" id="cardBodyIngles">Inglés</h5>
+
+          </div>
+          <button class="btnVerMas" id="btnVerMasIngles">
+            <i id="iconoVerMasIng" class="fa-solid  fa-hand-point-right animate__animated animate__shakeX"
+              style="color: #eb5c4f;"></i>
+          </button>
+        </div>
+        <div class="card" id="cardFlipFrances">
+          <div class="oculto card-body" id="cardInfoFrances">
+          </div>
+          <div class="card-iconos" id="cardIconosFrances">
+            <img src="./imagenes/french-flag.png" alt="">
+
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title" id="cardBodyFrances">Francés</h5>
+
+          </div>
+          <button class="btnVerMas" id="btnVerMasFrances">
+            <i id="iconoVerMasFr" class="fa-solid  fa-hand-point-right animate__animated animate__shakeX"
+              style="color: #eb5c4f;"></i>
+          </button>
+        </div>
+
+      </div>
+
+
+
+
     </section>
+
     <section class="portfolio-container-desktop" id="portfolioId">
       <h2 class="animate__animated animate__fadeIn">Portfolio</h2>
       <div id="carouselExampleIndicators2" class="carousel slide">
@@ -431,8 +382,6 @@
         </button>
       </div>
     </section>
-
-
 
 
     </div>

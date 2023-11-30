@@ -112,7 +112,7 @@
 
 
 .todo-el-contenido {
-  /* background-color: rgba(26, 26, 26, 1); */
+  
   background-color: rgb(31,34,51);
   color: white;
   text-align: center;
@@ -177,60 +177,7 @@
     }
   }
 
-  .seccion2-desktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* background: linear-gradient(45deg, red, #800000, #400000, black); */
-    background-color: rgb(37,39,62);
-    padding: 0 10px 10px;
-
-    ul {
-      grid-column: 2;
-
-      li {
-        padding: 20px 0;
-        list-style: none;
-        text-align: left;
-
-        i {
-          margin-right: 10px;
-        }
-      }
-
-      .titulo-instituto {
-        color: yellow;
-        padding-top: 0;
-      }
-    }
-
-    h2 {
-
-      text-align: center;
-    }
-
-
-
-    p {
-      text-align: left;
-      padding: 0 100px;
-      margin: 0;
-    }
-
-    .primer-parrafo-estudios {
-      padding-top: 40px;
-    }
-
-    .estudios-especializaciones {
-      grid-column: 2;
-
-    }
-
-    .idiomas-desktop {
-      grid-column: 3;
-
-
-    }
-  }
+  
 
   .estudios,
   .sobreMi-container,
@@ -268,64 +215,92 @@
 
 
   .estudios-especializaciones {
+    background-color: rgb(37,39,62);
+    padding: 20px 0 70px;
+    .btnMenu-container{
+      display: flex;
+      justify-content: center;
+      
+      
 
-    #carouselExampleIndicators{
-      .carousel-inner {
-        padding: 1em;
-    
-        .carousel-item {
-          max-width: 100%;
-    
-          .cards-container {
-            display: flex;
-            justify-content: space-around;
-            min-height: 304px;
-            max-width: 100%;
-    
-            .card {
-              max-width: calc(100%/2);
-              margin: 0 1em;
-              box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-              border: 1px solid rgb(66,57,73);
-              border-radius: 0;
-              background-color: rgb(31,34,51);
-              padding: 25px;
-              
-
-              .card-body{
-                width: 200px;
-                margin: auto;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                color: white;
-                
-                
-                
-                .card-text{
-                  padding: 0;
-                }
-              }
-              .card-iconos{
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-                i{
-                  font-size: 3rem;
-                }
-              }
-              .oculto{
-                display: none;
-              }
-    
-         
-            }
-            
-          }
-        }
+      button{
+        margin: 10px;
+        padding: 0.375rem;
+        border-radius: 0.375rem;
+        background-color: rgb(37,39,62);
+        color: white;
+        border: 1px solid rgb(37,39,62) ;
+      }
+      .btn-seleccionado{
+        background-color: rgb(235,92,79);
       }
       
+    }
+
+
+    .cards-container {
+      display: flex;
+      justify-content: space-evenly;
+      min-height: 304px;
+      max-width: 100%;
+      
+
+      .card {
+        max-width: calc(100%/2);
+        margin: 0 1em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: 1px solid rgb(66,57,73);
+        border-radius: 0;
+        background-color: rgb(31,34,51);
+        padding: 25px;
+        
+
+        .card-body{
+          width: 200px;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          
+          
+          
+          .card-text{
+            padding: 0;
+          }
+        }
+        .btnVerMas{
+          width: fit-content;
+          margin: auto;
+          border: none;
+          background-color: transparent;
+
+          i{
+            font-size: 40px;
+          }
+        }
+        .card-iconos{
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          i{
+            font-size: 3rem;
+          }
+          img{
+            width: 3rem;
+          }
+        }
+        .oculto{
+          display: none;
+        }
+
+   
+      }
+      
+    }
+    .oculto{
+      display: none;
     }
     
   }
@@ -396,7 +371,7 @@
 
   .contacto-container {
     padding: 0 20px 20px;
-    background: linear-gradient(45deg, red, #800000, #400000, black);
+    background-color: rgb(37,39,62);
 
     .redes {
       padding: 20px 0;
@@ -557,11 +532,10 @@
       }
     }
 
-    .estudios,
+    
     .sobreMi-container,
     .portfolio-container,
     .contacto-container,
-    .idiomas-mobile,
     .portfolio-container-mobile {
       text-align: center;
       padding: 50px 0;
@@ -644,57 +618,7 @@
       }
     }
 
-    .seccion2-desktop {
-      display: flex;
-      flex-direction: column;
-      background: linear-gradient(45deg, red, #800000, #400000, black);
-      padding: 0px;
-
-
-      .primer-parrafo-estudios {
-        padding-top: 40px;
-      }
-
-      .estudios-especializaciones {
-        grid-column: 2;
-
-      }
-
-      .idiomas-desktop {
-        grid-column: 3;
-
-
-      }
-    }
-
-    .estudios,
-    .estudios-especializaciones,
-    .idiomas-desktop,
-    .portfolio-container-mobile {
-      p {
-        padding: 0 50px;
-        font-size: 18px;
-      }
-
-      h2 {
-        font-size: 30px;
-      }
-    }
-
-    .estudios {
-      padding: 25px 0;
-    }
-
-    .estudios-especializaciones,
-    .idiomas-desktop {
-      h2 {
-        padding-top: 25px;
-      }
-    }
-
-    .idiomas-desktop {
-      padding-bottom: 40px;
-    }
+ 
 
     .portfolio-container-mobile {
       display: block;
@@ -732,10 +656,6 @@
         }
       }
     }
-
-
-
-
 
 
     .contacto-container {
