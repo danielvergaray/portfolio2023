@@ -78,13 +78,13 @@
 }
 .contacto-container {
   padding: 0 20px 20px;
-  background: linear-gradient(45deg, red, #800000, #400000, black);
+  
 
   h2 {
-    margin: 0 0 8px;
+   margin-bottom: 30px;
   }
   .redes {
-    padding: 20px 0;
+    /* padding: 20px 0; */
 
     a {
       i {
@@ -93,10 +93,10 @@
       }
     }
 
-    p {
+    /* p {
       padding-top: 20px;
       margin: 0 0 16px;
-    }
+    } */
   }
 }
 

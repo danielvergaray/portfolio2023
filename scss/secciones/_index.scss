@@ -1,5 +1,5 @@
 /* VERSION DESKTOP --------  */
-.oculto{
+.oculto {
   display: none;
 }
 
@@ -11,10 +11,9 @@
 }
 
 .header-background {
-  /* background-color: black; */
-  /* display: grid; */
-  font-size: 20px;
-  /* grid-template-columns: 20% 80%; */
+  position: relative;
+  /* font-size: 20px;
+  
   padding: 10px 40px;
   background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url("../../imagenes/desktop/ancash-huaraz.jpg");
@@ -22,20 +21,75 @@
   background-repeat: none;
   background-size: cover;
   color: black;
-  height: 80vh;
+  height: 50vh; */
+
+  .header-desktop-background {
+    display: grid;
+    grid-template-rows: 50vh 50vh;
+
+    .header-info-portfolio {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+        url("../../imagenes/desktop/ancash-huaraz.jpg");
+      background-position: center center;
+      background-repeat: none;
+      background-size: cover;
+      grid-row: 1;
+      display: grid;
+      grid-template-columns: 30% 70%;
+
+      ul {
+        grid-column: 2;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: min-content;
+
+        li {
+          list-style: none;
+          cursor: pointer;
+
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+          }
+
+          &:hover {
+            /* background: linear-gradient(45deg, red, #800000, #400000, black); */
+            /* border-radius: 8px; */
+            opacity: .5;
+
+          }
+        }
+      }
+
+    }
+
+    .header-seccionVacia {
+      grid-row: 2;
+      background-color: rgb(31, 34, 51);
+
+    }
+  }
 
   .header-container-fotoTitulo {
-    padding-top: 10vh;
+    position: absolute;
+    top: 55%; /* Centra en la mitad de la pantalla verticalmente */
+    left: 50%; /* Centra en la mitad de la pantalla horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centrar correctamente */
 
     .header-background-foto {
       margin: auto;
       text-align: center;
-
+      grid-row: 1;
 
       .header-foto {
         width: 200px;
+        display: block; /* Asegura que la imagen se centre correctamente */
+        margin: auto; /* Centra la imagen horizontalmente */
       }
-
 
     }
 
@@ -47,50 +101,8 @@
         color: rgb(217, 105, 89);
       }
     }
+
   }
-
-
-
-  .header-info-portfolio {
-    /* margin: auto 0; */
-    display: grid;
-    grid-template-columns: 30% 70%;
-
-    .header-logo {
-      grid-column: 1;
-      width: 100%;
-    }
-
-    ul {
-      grid-column: 2;
-      display: flex;
-      justify-content: space-around;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-
-      li {
-        list-style: none;
-        cursor: pointer;
-
-        a {
-          text-decoration: none;
-          color: white;
-        }
-
-        &:hover {
-          background: linear-gradient(45deg, red, #800000, #400000, black);
-          border-radius: 8px;
-
-        }
-      }
-    }
-  }
-
-
-
-
-
 
   .header-nombre-portfolio {
     padding-right: 20px;
@@ -112,8 +124,8 @@
 
 
 .todo-el-contenido {
-  
-  background-color: rgb(31,34,51);
+
+  background-color: rgb(31, 34, 51);
   color: white;
   text-align: center;
   padding: 40px 0px 0;
@@ -177,13 +189,11 @@
     }
   }
 
-  
 
-  .estudios,
+
   .sobreMi-container,
   .portfolio-container-desktop,
   .contacto-container,
-  .idiomas,
   .estudios-especializaciones {
     text-align: center;
     width: 100%;
@@ -215,47 +225,47 @@
 
 
   .estudios-especializaciones {
-    background-color: rgb(37,39,62);
-    padding: 20px 0 70px;
-    .btnMenu-container{
+    background-color: rgb(37, 39, 62);
+    padding: 50px 0 70px;
+
+    .btnMenu-container {
       display: flex;
       justify-content: center;
-      
-      
+      padding-bottom: 20px;
 
-      button{
+      button {
         margin: 10px;
         padding: 0.375rem;
         border-radius: 0.375rem;
-        background-color: rgb(37,39,62);
+        background-color: rgb(37, 39, 62);
         color: white;
-        border: 1px solid rgb(37,39,62) ;
+        border: 1px solid rgb(37, 39, 62);
       }
-      .btn-seleccionado{
-        background-color: rgb(235,92,79);
-      }
-      
-    }
 
+      .btn-seleccionado {
+        background-color: rgb(235, 92, 79);
+      }
+
+    }
 
     .cards-container {
       display: flex;
       justify-content: space-evenly;
       min-height: 304px;
       max-width: 100%;
-      
+
 
       .card {
         max-width: calc(100%/2);
         margin: 0 1em;
         box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-        border: 1px solid rgb(66,57,73);
+        border: 1px solid rgb(66, 57, 73);
         border-radius: 0;
-        background-color: rgb(31,34,51);
+        background-color: rgb(31, 34, 51);
         padding: 25px;
-        
 
-        .card-body{
+
+        .card-body {
           width: 200px;
           margin: auto;
           display: flex;
@@ -263,118 +273,126 @@
           justify-content: center;
           align-items: center;
           color: white;
-          
-          
-          
-          .card-text{
+
+
+
+          .card-text {
             padding: 0;
           }
         }
-        .btnVerMas{
+
+        .btnVerMas {
           width: fit-content;
           margin: auto;
           border: none;
           background-color: transparent;
 
-          i{
+          i {
             font-size: 40px;
           }
         }
-        .card-iconos{
+
+        .card-iconos {
           width: 100%;
           display: flex;
           justify-content: space-around;
-          i{
+
+          i {
             font-size: 3rem;
           }
-          img{
+
+          img {
             width: 3rem;
           }
         }
-        .oculto{
+
+        .oculto {
           display: none;
         }
 
-   
+
       }
-      
+
     }
-    .oculto{
+
+    .oculto {
       display: none;
     }
-    
-  }
 
-  #carouselExampleIndicators2{
-    .carousel-inner {
-      padding: 5em;
+  }
+  .portfolio-container-desktop{
+    padding: 20px;
+    #carouselExampleIndicators2 {
+      .carousel-inner {
+        padding: 5em;
+        padding-top: 2em;
   
-      .carousel-item {
-        max-width: 100%;
+        .carousel-item {
+          max-width: 100%;
   
-        .cards-container {
-          display: flex;
-          justify-content: space-evenly;
+          .cards-container {
+            display: flex;
+            justify-content: space-evenly;
   
-          .card {
-            max-width: calc(100%/3);
-            margin: 0 2em;
-            box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-            border: none;
-            border-radius: 0;
-            background-color: gray;
-            padding: 50px;
-  
-            a {
-              padding: 15px;
-              font-size: 17px;
-              letter-spacing: 1.3px;
-              background: linear-gradient(45deg, red, #800000, #400000, black);
+            .card {
+              max-width: calc(100%/3);
+              margin: 0 2em;
+              box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
               border: none;
-              color: white;
-              border-radius: 10px;
-              width: fit-content;
-              margin: 0;
-              font-weight: 900;
-              cursor: pointer;
+              border-radius: 0;
+              background-color: gray;
+              padding: 50px;
   
-              &:hover {
-                opacity: 0.7;
+              a {
+                padding: 15px;
+                font-size: 17px;
+                letter-spacing: 1.3px;
+                background: linear-gradient(45deg, red, #800000, #400000, black);
+                border: none;
+                color: white;
+                border-radius: 10px;
+                width: fit-content;
+                margin: 0;
+                font-weight: 900;
+                cursor: pointer;
+  
+                &:hover {
+                  opacity: 0.7;
+                }
               }
-            }
   
-            img {
-              max-width: 70%;
-              height: 110px;
-              margin: auto;
+              img {
+                max-width: 70%;
+                height: 110px;
+                margin: auto;
+              }
             }
           }
         }
       }
-    }
   
-    .carousel-control-prev,
-    .carousel-control-next {
-      background-color: gray;
-      width: 5vh;
-      height: 5vh;
-      border-radius: 50%;
-      top: 50%;
-      transform: translateY(-50%);
+      .carousel-control-prev,
+      .carousel-control-next {
+        background-color: gray;
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
   }
+
   
-
-
-
 
 
   .contacto-container {
-    padding: 0 20px 20px;
-    background-color: rgb(37,39,62);
+    padding: 20px;
+    background-color: rgb(37, 39, 62);
+
 
     .redes {
-      padding: 20px 0;
+      /* padding: 20px 0; */
 
       a {
         i {
@@ -384,7 +402,7 @@
       }
 
       p {
-        padding-top: 20px;
+        margin: 0;
       }
     }
   }
@@ -532,7 +550,7 @@
       }
     }
 
-    
+
     .sobreMi-container,
     .portfolio-container,
     .contacto-container,
@@ -618,7 +636,102 @@
       }
     }
 
- 
+    .estudios-especializaciones {
+      background-color: rgb(37, 39, 62);
+      padding: 0px;
+  
+      .btnMenu-container {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+  
+        button {
+          margin: 10px;
+          padding: 0.375rem;
+          border-radius: 0.375rem;
+          background-color: rgb(37, 39, 62);
+          color: white;
+          border: 1px solid rgb(37, 39, 62);
+        }
+  
+        .btn-seleccionado {
+          background-color: rgb(235, 92, 79);
+        }
+  
+      }
+  
+      .cards-container {
+        display: flex;
+        justify-content: space-evenly;
+        min-height: 304px;
+        max-width: 100%;
+  
+  
+        .card {
+          width: 100%;
+          margin: 0 1em;
+          box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+          border: 1px solid rgb(66, 57, 73);
+          border-radius: 0;
+          background-color: rgb(31, 34, 51);
+          padding: 25px;
+  
+  
+          .card-body {
+            width: 200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+  
+  
+  
+            .card-text {
+              padding: 0;
+            }
+          }
+  
+          .btnVerMas {
+            width: fit-content;
+            margin: auto;
+            border: none;
+            background-color: transparent;
+  
+            i {
+              font-size: 40px;
+            }
+          }
+  
+          .card-iconos {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+  
+            i {
+              font-size: 3rem;
+            }
+  
+            img {
+              width: 3rem;
+            }
+          }
+  
+          .oculto {
+            display: none;
+          }
+  
+  
+        }
+  
+      }
+  
+      .oculto {
+        display: none;
+      }
+  
+    }
 
     .portfolio-container-mobile {
       display: block;
