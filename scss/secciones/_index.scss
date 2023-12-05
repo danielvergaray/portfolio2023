@@ -126,12 +126,7 @@
   text-align: center;
   padding: 40px 0px 0;
 
-  /* main {
-    .main-principal {
-      padding: 0px 10px 0;
-
-    }
-  } */
+  
 
 
   .sobreMi-container {
@@ -400,7 +395,7 @@
 
 
     .redes {
-      /* padding: 20px 0; */
+      
 
       a {
         i {
@@ -438,7 +433,7 @@
   
       .header-info-portfolio {
         background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
-          url("../../imagenes/desktop/ancash-huaraz.jpg");
+          url("../imagenes/desktop/ancash-huaraz.jpg");
         background-position: center center;
         background-repeat: none;
         background-size: cover;
@@ -521,41 +516,7 @@
     color: white;
     padding-top: 40vh;
 
-    /* main {
-      position: relative;
-      z-index: 1;
-
-      .main-principal {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 10px 0;
-
-        .main-foto {
-          padding: 20px 0;
-          float: none;
-          width: 100%;
-
-          img {
-            width: 60%;
-          }
-        }
-      }
-
-      .main-secundaria {
-        text-align: center;
-        padding-bottom: 20px;
-
-        .redes {
-          i {
-            font-size: 20px;
-            color: white;
-          }
-        }
-      }
-    } */
-
-
+    
     .sobreMi-container,
     .portfolio-container,
     .contacto-container,
@@ -702,9 +663,7 @@
               margin: 5px 0;
             }
             
-            /* .card-body .card-text:nth-child(2){
-              font-size: 30px;
-            } */
+            
 
             
           }

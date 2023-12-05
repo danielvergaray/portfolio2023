@@ -21,7 +21,7 @@
     display: grid;
     grid-template-rows: 50vh 50vh; }
     .header-background .header-desktop-background .header-info-portfolio {
-      background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../../imagenes/desktop/ancash-huaraz.jpg");
+      background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../imagenes/desktop/ancash-huaraz.jpg");
       background-position: center center;
       background-repeat: none;
       background-size: cover;
@@ -87,13 +87,7 @@
   background-color: #1f2233;
   color: white;
   text-align: center;
-  padding: 40px 0px 0;
-  /* main {
-    .main-principal {
-      padding: 0px 10px 0;
-
-    }
-  } */ }
+  padding: 40px 0px 0; }
   .todo-el-contenido .sobreMi-container {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -267,13 +261,11 @@
   .todo-el-contenido .contacto-container {
     padding: 20px;
     background-color: #25273e; }
-    .todo-el-contenido .contacto-container .redes {
-      /* padding: 20px 0; */ }
-      .todo-el-contenido .contacto-container .redes a i {
-        font-size: 25px;
-        color: white; }
-      .todo-el-contenido .contacto-container .redes p {
-        margin: 0; }
+    .todo-el-contenido .contacto-container .redes a i {
+      font-size: 25px;
+      color: white; }
+    .todo-el-contenido .contacto-container .redes p {
+      margin: 0; }
 
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
@@ -287,7 +279,7 @@
       display: flex;
       flex-direction: column; }
       .header-background .header-desktop-background .header-info-portfolio {
-        background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../../imagenes/desktop/ancash-huaraz.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../imagenes/desktop/ancash-huaraz.jpg");
         background-position: center center;
         background-repeat: none;
         background-size: cover;
@@ -335,40 +327,7 @@
   .todo-el-contenido {
     background-color: #1f2233;
     color: white;
-    padding-top: 40vh;
-    /* main {
-      position: relative;
-      z-index: 1;
-
-      .main-principal {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 10px 0;
-
-        .main-foto {
-          padding: 20px 0;
-          float: none;
-          width: 100%;
-
-          img {
-            width: 60%;
-          }
-        }
-      }
-
-      .main-secundaria {
-        text-align: center;
-        padding-bottom: 20px;
-
-        .redes {
-          i {
-            font-size: 20px;
-            color: white;
-          }
-        }
-      }
-    } */ }
+    padding-top: 40vh; }
     .todo-el-contenido .sobreMi-container,
     .todo-el-contenido .portfolio-container,
     .todo-el-contenido .contacto-container,
@@ -467,10 +426,7 @@
             align-items: center;
             color: white;
             font-size: 14px;
-            padding: 0;
-            /* .card-body .card-text:nth-child(2){
-              font-size: 30px;
-            } */ }
+            padding: 0; }
             .todo-el-contenido .estudios-especializaciones .cards-container .card .card-body .card-title {
               font-size: 20px; }
             .todo-el-contenido .estudios-especializaciones .cards-container .card .card-body p {
