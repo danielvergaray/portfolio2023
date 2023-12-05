@@ -21,7 +21,7 @@
     display: grid;
     grid-template-rows: 50vh 50vh; }
     .header-background .header-desktop-background .header-info-portfolio {
-      background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../imagenes/desktop/ancash-huaraz.jpg");
+      background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../../imagenes/desktop/ancash-huaraz.jpg");
       background-position: center center;
       background-repeat: none;
       background-size: cover;
