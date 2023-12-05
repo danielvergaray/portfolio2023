@@ -1,10 +1,10 @@
 let menuHamburguesaContainer = document.getElementById("menuHamburguesaId");
 let todoContenido= document.getElementById("todoElContenido");
 let menuHambuguesaDesplegable= document.getElementById("menuDesplegable");
-crearMenu(menuHamburguesaContainer,menuHambuguesaDesplegable);
+/* crearMenu(menuHamburguesaContainer,menuHambuguesaDesplegable); */
 
-function crearMenu(menu,menuDesplegable) {
-  /* let opcionesMenu = ["Sobre mi", "Estudios", "Portfolio", "Contacto"]; */
+/* function crearMenu(menu,menuDesplegable) {
+  
   let opcionesMenu= [
     {nombre:"Sobre mi", link:"#sobreMi"},
     {nombre:"Estudios", link:"#estudiosId"},
@@ -14,14 +14,7 @@ function crearMenu(menu,menuDesplegable) {
   ];
 
 
-  /* opcionesMenu.forEach((cadaOpcion) => {
-    let aCreado = document.createElement("a");
-    aCreado.textContent = cadaOpcion;
-    menu.appendChild(aCreado);
-  });
-
-  menu.classList.add("oculto");
-} */
+  
 
 opcionesMenu.forEach((cadaOpcion) => {
   
@@ -36,7 +29,7 @@ opcionesMenu.forEach((cadaOpcion) => {
 
 menu.classList.add("oculto");
 menuDesplegable.classList.add("oculto");
-}
+} */
 
 
 let btnOpcionMenu=document.querySelectorAll(".opcion-seleccionada");
@@ -47,7 +40,7 @@ btnOpcionMenu.forEach((btnOpcion) => {
 });
 
 let btnHamburguesa = document.getElementById("menuHamburguesaBtn");
-btnHamburguesa.addEventListener("click", ()=> mostrarOcultar(menuHamburguesaContainer, todoContenido));
+/* btnHamburguesa.addEventListener("click", ()=> mostrarOcultar(menuHamburguesaContainer, todoContenido)); */
 
 function mostrarOcultar(menu, todoContenido){
    
