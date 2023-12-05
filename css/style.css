@@ -258,6 +258,38 @@
       border-radius: 50%;
       top: 50%;
       transform: translateY(-50%); }
+    .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto {
+      position: relative;
+      top: -400px;
+      /* background-color: black; */
+      height: 60vh;
+      border: 1px solid black;
+      background-color: black;
+      margin: auto;
+      display: flex;
+      flex-direction: column; }
+      .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto .card-separador-carusel-info {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        height: 100%; }
+        .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto .card-separador-carusel-info #carouselExampleIndicators {
+          grid-column: 1; }
+        .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto .card-separador-carusel-info .cardInfo-contenedor-detalles {
+          margin: auto;
+          background-color: yellow;
+          grid-column: 2; }
+      .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto .oculto {
+        display: none; }
+    .todo-el-contenido .portfolio-container-desktop .oculto {
+      display: none; }
+    .todo-el-contenido .portfolio-container-desktop .cortina {
+      -webkit-animation: fadein .2s;
+      animation: fadein .2s;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+      opacity: .2;
+      top: 0;
+      bottom: 0;
+      background: #ccc; }
   .todo-el-contenido .contacto-container {
     padding: 20px;
     background-color: #25273e; }
@@ -271,7 +303,8 @@
 @media (max-width: 576px) {
   .header-info-portfolio,
   .proyecto-pig-game,
-  .portfolio-container-desktop, .header-info-portfolio ul li {
+  .portfolio-container-desktop,
+  .header-info-portfolio ul li {
     display: none; }
   .header-background {
     position: relative; }
@@ -551,15 +584,9 @@
   padding: 0 20px 20px; }
   .contacto-container h2 {
     margin-bottom: 30px; }
-  .contacto-container .redes {
-    /* padding: 20px 0; */
-    /* p {
-      padding-top: 20px;
-      margin: 0 0 16px;
-    } */ }
-    .contacto-container .redes a i {
-      font-size: 25px;
-      color: white; }
+  .contacto-container .redes a i {
+    font-size: 25px;
+    color: white; }
 
 @media (max-width: 576px) {
   .btn-regresar, .img-desktop {

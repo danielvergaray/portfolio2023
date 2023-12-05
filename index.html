@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header class="header-background">
+  <header id="headerId" class="header-background">
 
     <div class="header-desktop-background">
       <div class="header-info-portfolio">
@@ -244,6 +244,8 @@
 
     </section>
 
+    
+
     <section class="portfolio-container-desktop" id="portfolioId">
       <h2 class="animate__animated animate__fadeIn">Portfolio</h2>
       <div id="carouselExampleIndicators2" class="carousel slide">
@@ -262,7 +264,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Juego: Adivina el número</h5>
                   <p class="card-text">HTML5, CSS3, javaScript</p>
-                  <a href="./secciones/adivinaNumero.html" class="btn btn-primary">Ver más</a>
+                  <button href="#" id="btnVerMasAdivina" class="btn btn-primary">Ver más</button>
                 </div>
               </div>
               <div class="card">
@@ -325,7 +327,13 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <section id="infoCadaProyecto" class="oculto info-cada-proyecto">
+        <!-- <h1>hola</h1> -->
+      </section>
     </section>
+
+    
 
     <section class="portfolio-container-mobile">
       <h2 class="animate__animated animate__fadeIn">Portfolio</h2>
@@ -397,6 +405,8 @@
       </div>
     </section>
   </section>
+
+  
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

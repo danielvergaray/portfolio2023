@@ -12,7 +12,7 @@
 
 .header-background {
   position: relative;
-  
+
 
   .header-desktop-background {
     display: grid;
@@ -61,7 +61,7 @@
     .header-seccionVacia {
       grid-row: 2;
       background-color: rgb(31, 34, 51);
-      
+
     }
   }
 
@@ -120,13 +120,13 @@
 
 
 .todo-el-contenido {
-  
+
   background-color: rgb(31, 34, 51);
   color: white;
   text-align: center;
   padding: 40px 0px 0;
 
-  
+
 
 
   .sobreMi-container {
@@ -346,8 +346,10 @@
                 margin: auto;
                 grid-row: 1;
               }
+
               .card-body {
                 grid-row: 2;
+
                 a {
                   padding: 15px;
                   font-size: 17px;
@@ -368,7 +370,7 @@
               }
 
 
-              
+
             }
           }
         }
@@ -384,7 +386,67 @@
         transform: translateY(-50%);
       }
     }
+
+    .info-cada-proyecto {
+      position: relative;
+      top: -400px;
+      /* background-color: black; */
+      height: 60vh;
+      border: 1px solid black;
+      background-color: black;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      
+
+      .card-separador-carusel-info {
+
+        display: grid;
+        grid-template-columns: 60% 40%;
+        height: 100%;
+        #carouselExampleIndicators {
+          grid-column: 1;
+        }
+
+        .cardInfo-contenedor-detalles {
+          margin: auto;
+          background-color: yellow;
+          grid-column: 2;
+
+        }
+
+
+
+
+      }
+
+
+
+
+
+
+      .oculto {
+        display: none;
+      }
+    }
+    .oculto{
+      display: none;
+    }
+
+    .cortina {
+      -webkit-animation: fadein .2s;
+      animation: fadein .2s;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+      opacity: .2;
+
+      top: 0;
+      bottom: 0;
+      background: #ccc
+    }
   }
+
+
+
 
 
 
@@ -395,7 +457,7 @@
 
 
     .redes {
-      
+
 
       a {
         i {
@@ -413,24 +475,28 @@
 
 
 
+
+
+
 /* VERSION MOBILE --------  */
 
 @media (max-width: 576px) {
 
   .header-info-portfolio,
   .proyecto-pig-game,
-  .portfolio-container-desktop, .header-info-portfolio ul li {
+  .portfolio-container-desktop,
+  .header-info-portfolio ul li {
     display: none;
   }
 
   .header-background {
     position: relative;
-    
-  
+
+
     .header-desktop-background {
       display: flex;
       flex-direction: column;
-  
+
       .header-info-portfolio {
         background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
           url("../imagenes/desktop/ancash-huaraz.jpg");
@@ -441,17 +507,17 @@
         display: grid;
         grid-template-columns: 30% 70%;
         height: 30vh;
-        
-  
+
+
       }
-  
+
       .header-seccionVacia {
         grid-row: 2;
         background-color: rgb(31, 34, 51);
-        
+
       }
     }
-  
+
     .header-container-fotoTitulo {
       position: absolute;
       top: 120%;
@@ -460,12 +526,12 @@
       /* Centra en la mitad de la pantalla horizontalmente */
       transform: translate(-50%, -50%);
       /* Ajusta para centrar correctamente */
-  
+
       .header-background-foto {
         margin: auto;
         text-align: center;
         grid-row: 1;
-  
+
         .header-foto {
           width: 200px;
           display: block;
@@ -473,39 +539,39 @@
           margin: auto;
           /* Centra la imagen horizontalmente */
         }
-  
+
       }
-  
+
       .header-titulos {
         text-align: center;
         color: white;
-  
+
         h1 {
           color: rgb(217, 105, 89);
         }
       }
-  
+
     }
-  
+
     .header-nombre-portfolio {
       padding-right: 20px;
       margin-left: 10px;
       width: fit-content;
-  
+
       a {
         color: white;
         text-decoration: none;
-  
+
         p {
           margin: 0;
-  
+
         }
       }
     }
-  
+
   }
 
-  
+
 
   .oculto {
     display: none;
@@ -516,7 +582,7 @@
     color: white;
     padding-top: 40vh;
 
-    
+
     .sobreMi-container,
     .portfolio-container,
     .contacto-container,
@@ -555,7 +621,7 @@
     .sobreMi-container {
       display: flex;
       flex-direction: column;
-      
+
       padding: 0;
 
       .seccion-fotoSobreMi {
@@ -642,7 +708,7 @@
           height: 220px;
           display: flex;
           /* padding: 50px; */
-          
+
           .card-body {
             /* width: 200px; */
             margin: auto;
@@ -655,19 +721,21 @@
             padding: 0;
 
 
-            .card-title{
+            .card-title {
               font-size: 20px;
             }
-            p{
+
+            p {
               font-size: 16px;
               margin: 5px 0;
             }
-            
-            
 
-            
+
+
+
           }
-          .card-iconos{
+
+          .card-iconos {
             .card-text {
               padding: 0;
               font-size: 4px;
