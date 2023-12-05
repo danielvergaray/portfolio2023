@@ -113,7 +113,7 @@ const cursos = [
     cardFlip: 'cardFlipReact',
     title: 'React',
     institute: 'CoderHouse',
-    description: 'xxx',
+    description: '08 semanas desarrollando aplicaciones en React',
     iconoVerMasHtml: 'iconoVerMasReact'
   },
   {
@@ -124,7 +124,7 @@ const cursos = [
     cardFlip: 'cardFlipWp',
     title: 'Wordpress',
     institute: 'CoderHouse',
-    description: 'xxx',
+    description: '05 semanas desarrollando un Eccommerce',
     iconoVerMasHtml: 'iconoVerMasWp'
   },
 ];
@@ -193,7 +193,7 @@ idiomas.forEach(idioma => {
 
 function flipCard(cardIconos, cardInfo, cardBody, cardFlip, title, institute, description, iconoFlechaVerMas) {
   cardIconos.classList.toggle('oculto');
-  cardInfo.innerHTML = `<h5 class="card-title">${title}</h5><card-text>${institute}</card-text><div class="card-iconos"><card-text>${description}</card-text></div>`;
+  cardInfo.innerHTML = `<h5 class="card-title">${title}</h5><p>${institute}</p><div class="card-iconos"><card-text>${description}</card-text></div>`;
   cardInfo.classList.toggle('oculto');
   cardBody.classList.toggle('oculto');
   cardFlip.classList.add('animate__animated', 'animate__flipInY');
