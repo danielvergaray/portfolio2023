@@ -13,7 +13,6 @@
 .header-background {
   position: relative;
 
-
   .header-desktop-background {
     display: grid;
     grid-template-rows: 50vh 50vh;
@@ -50,18 +49,15 @@
           &:hover {
             /* background: linear-gradient(45deg, red, #800000, #400000, black); */
             /* border-radius: 8px; */
-            opacity: .5;
-
+            opacity: 0.5;
           }
         }
       }
-
     }
 
     .header-seccionVacia {
       grid-row: 2;
       background-color: rgb(31, 34, 51);
-
     }
   }
 
@@ -86,7 +82,6 @@
         margin: auto;
         /* Centra la imagen horizontalmente */
       }
-
     }
 
     .header-titulos {
@@ -97,7 +92,6 @@
         color: rgb(217, 105, 89);
       }
     }
-
   }
 
   .header-nombre-portfolio {
@@ -111,23 +105,16 @@
 
       p {
         margin: 0;
-
       }
     }
   }
-
 }
 
-
 .todo-el-contenido {
-
   background-color: rgb(31, 34, 51);
   color: white;
   text-align: center;
   padding: 40px 0px 0;
-
-
-
 
   .sobreMi-container {
     display: grid;
@@ -163,7 +150,6 @@
 
       h2 {
         text-align: center;
-
       }
 
       p {
@@ -175,12 +161,9 @@
         &:nth-of-type(2) {
           padding-top: 0;
         }
-
       }
     }
   }
-
-
 
   .sobreMi-container,
   .portfolio-container-desktop,
@@ -214,7 +197,6 @@
     }
   }
 
-
   .estudios-especializaciones {
     background-color: rgb(37, 39, 62);
     padding: 50px 0 70px;
@@ -237,7 +219,6 @@
       .btn-seleccionado {
         background-color: rgb(235, 92, 79);
       }
-
     }
 
     .cards-container {
@@ -246,16 +227,14 @@
       min-height: 304px;
       max-width: 100%;
 
-
       .card {
-        max-width: calc(100%/2);
+        max-width: calc(100% / 2);
         margin: 0 1em;
         box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
         border: 1px solid rgb(66, 57, 73);
         border-radius: 0;
         background-color: rgb(31, 34, 51);
         padding: 25px;
-
 
         .card-body {
           width: 200px;
@@ -265,8 +244,6 @@
           justify-content: center;
           align-items: center;
           color: white;
-
-
 
           .card-text {
             padding: 0;
@@ -301,16 +278,12 @@
         .oculto {
           display: none;
         }
-
-
       }
-
     }
 
     .oculto {
       display: none;
     }
-
   }
 
   .portfolio-container-desktop {
@@ -329,7 +302,7 @@
             justify-content: space-evenly;
 
             .card {
-              max-width: calc(100%/3);
+              max-width: calc(100% / 3);
               margin: 0 2em;
               box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
               border: none;
@@ -354,7 +327,13 @@
                   padding: 15px;
                   font-size: 17px;
                   letter-spacing: 1.3px;
-                  background: linear-gradient(45deg, red, #800000, #400000, black);
+                  background: linear-gradient(
+                    45deg,
+                    red,
+                    #800000,
+                    #400000,
+                    black
+                  );
                   border: none;
                   color: white;
                   border-radius: 10px;
@@ -368,9 +347,6 @@
                   }
                 }
               }
-
-
-
             }
           }
         }
@@ -388,77 +364,94 @@
     }
 
     .info-cada-proyecto {
-      position: relative;
-      top: -400px;
+      /* position: relative;
+      top: -400px; */
       /* background-color: black; */
-      height: 60vh;
+      height: fit-content;
       border: 1px solid black;
-      background-color: black;
+      background-color: rgb(37, 39, 62);
       margin: auto;
-      display: flex;
-      flex-direction: column;
-      
+      /* display: flex;
+      flex-direction: column; */
+      /* display: grid;
+      grid-template-columns: 60% 40%; */
+
+      .card-icono-close{
+        text-align: right;
+        padding-right: 70px;
+        padding-top: 50px;
+
+        i{
+          font-size: 25px;
+          cursor: pointer;
+        }
+      }
 
       .card-separador-carusel-info {
-
         display: grid;
         grid-template-columns: 60% 40%;
+        grid-column: 2;
         height: 100%;
+
         #carouselExampleIndicators {
           grid-column: 1;
         }
 
         .cardInfo-contenedor-detalles {
-          margin: auto;
-          background-color: yellow;
+          padding: 50px 70px;
+          color: white;
           grid-column: 2;
+          text-align: left;
 
+          .card-info-contenedorBotones {
+            display: flex;
+            flex-direction: column;
+
+            button{
+              background-color: rgb(31, 34, 51);
+              padding: 5px;
+              color: white;
+              margin: 5px 0;
+              border: none;
+
+            
+            }
+            
+          }
         }
-
-
-
-
       }
 
+      .carousel-item {
+        padding: 50px 70px;
+      }
 
-
-
-
+      
 
       .oculto {
         display: none;
       }
     }
-    .oculto{
+    .oculto {
       display: none;
     }
 
     .cortina {
-      -webkit-animation: fadein .2s;
-      animation: fadein .2s;
+      -webkit-animation: fadein 0.2s;
+      animation: fadein 0.2s;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-      opacity: .2;
+      opacity: 0.2;
 
       top: 0;
       bottom: 0;
-      background: #ccc
+      background: #ccc;
     }
   }
-
-
-
-
-
-
 
   .contacto-container {
     padding: 20px;
     background-color: rgb(37, 39, 62);
 
-
     .redes {
-
-
       a {
         i {
           font-size: 25px;
@@ -472,16 +465,20 @@
     }
   }
 }
+.cortina {
+  -webkit-animation: fadein 0.2s;
+  animation: fadein 0.2s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
 
-
-
-
-
+  top: 0;
+  bottom: 0;
+  background: #ccc;
+}
 
 /* VERSION MOBILE --------  */
 
 @media (max-width: 576px) {
-
   .header-info-portfolio,
   .proyecto-pig-game,
   .portfolio-container-desktop,
@@ -491,7 +488,6 @@
 
   .header-background {
     position: relative;
-
 
     .header-desktop-background {
       display: flex;
@@ -507,14 +503,11 @@
         display: grid;
         grid-template-columns: 30% 70%;
         height: 30vh;
-
-
       }
 
       .header-seccionVacia {
         grid-row: 2;
         background-color: rgb(31, 34, 51);
-
       }
     }
 
@@ -539,7 +532,6 @@
           margin: auto;
           /* Centra la imagen horizontalmente */
         }
-
       }
 
       .header-titulos {
@@ -550,7 +542,6 @@
           color: rgb(217, 105, 89);
         }
       }
-
     }
 
     .header-nombre-portfolio {
@@ -564,14 +555,10 @@
 
         p {
           margin: 0;
-
         }
       }
     }
-
   }
-
-
 
   .oculto {
     display: none;
@@ -581,7 +568,6 @@
     background-color: rgb(31, 34, 51);
     color: white;
     padding-top: 40vh;
-
 
     .sobreMi-container,
     .portfolio-container,
@@ -617,7 +603,6 @@
       }
     }
 
-
     .sobreMi-container {
       display: flex;
       flex-direction: column;
@@ -625,7 +610,6 @@
       padding: 0;
 
       .seccion-fotoSobreMi {
-
         .main-foto {
           padding: 0;
 
@@ -646,12 +630,8 @@
       }
 
       .texto-sobreMi {
-
-
         h2 {
           text-align: center;
-
-
         }
 
         p {
@@ -663,7 +643,6 @@
           &:nth-of-type(2) {
             padding-top: 0;
           }
-
         }
       }
     }
@@ -689,7 +668,6 @@
         .btn-seleccionado {
           background-color: rgb(235, 92, 79);
         }
-
       }
 
       .cards-container {
@@ -720,7 +698,6 @@
             font-size: 14px;
             padding: 0;
 
-
             .card-title {
               font-size: 20px;
             }
@@ -729,10 +706,6 @@
               font-size: 16px;
               margin: 5px 0;
             }
-
-
-
-
           }
 
           .card-iconos {
@@ -770,16 +743,12 @@
           .oculto {
             display: none;
           }
-
-
         }
-
       }
 
       .oculto {
         display: none;
       }
-
     }
 
     .portfolio-container-mobile {
@@ -818,7 +787,6 @@
         }
       }
     }
-
 
     .contacto-container {
       margin-top: 20px;

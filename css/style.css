@@ -46,7 +46,7 @@
           .header-background .header-desktop-background .header-info-portfolio ul li:hover {
             /* background: linear-gradient(45deg, red, #800000, #400000, black); */
             /* border-radius: 8px; */
-            opacity: .5; }
+            opacity: 0.5; }
     .header-background .header-desktop-background .header-seccionVacia {
       grid-row: 2;
       background-color: #1f2233; }
@@ -172,7 +172,7 @@
       min-height: 304px;
       max-width: 100%; }
       .todo-el-contenido .estudios-especializaciones .cards-container .card {
-        max-width: calc(100%/2);
+        max-width: calc(100% / 2);
         margin: 0 1em;
         box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
         border: 1px solid #423949;
@@ -219,7 +219,7 @@
           display: flex;
           justify-content: space-evenly; }
           .todo-el-contenido .portfolio-container-desktop #carouselExampleIndicators2 .carousel-inner .carousel-item .cards-container .card {
-            max-width: calc(100%/3);
+            max-width: calc(100% / 3);
             margin: 0 2em;
             box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
             border: none;
@@ -259,34 +259,56 @@
       top: 50%;
       transform: translateY(-50%); }
     .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto {
-      position: relative;
-      top: -400px;
+      /* position: relative;
+      top: -400px; */
       /* background-color: black; */
-      height: 60vh;
+      height: fit-content;
       border: 1px solid black;
-      background-color: black;
+      background-color: #25273e;
       margin: auto;
-      display: flex;
-      flex-direction: column; }
+      /* display: flex;
+      flex-direction: column; */
+      /* display: grid;
+      grid-template-columns: 60% 40%; */ }
+      .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto .card-icono-close {
+        text-align: right;
+        padding-right: 70px;
+        padding-top: 50px; }
+        .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto .card-icono-close i {
+          font-size: 25px;
+          cursor: pointer; }
       .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto .card-separador-carusel-info {
         display: grid;
         grid-template-columns: 60% 40%;
+        grid-column: 2;
         height: 100%; }
         .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto .card-separador-carusel-info #carouselExampleIndicators {
           grid-column: 1; }
         .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto .card-separador-carusel-info .cardInfo-contenedor-detalles {
-          margin: auto;
-          background-color: yellow;
-          grid-column: 2; }
+          padding: 50px 70px;
+          color: white;
+          grid-column: 2;
+          text-align: left; }
+          .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto .card-separador-carusel-info .cardInfo-contenedor-detalles .card-info-contenedorBotones {
+            display: flex;
+            flex-direction: column; }
+            .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto .card-separador-carusel-info .cardInfo-contenedor-detalles .card-info-contenedorBotones button {
+              background-color: #1f2233;
+              padding: 5px;
+              color: white;
+              margin: 5px 0;
+              border: none; }
+      .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto .carousel-item {
+        padding: 50px 70px; }
       .todo-el-contenido .portfolio-container-desktop .info-cada-proyecto .oculto {
         display: none; }
     .todo-el-contenido .portfolio-container-desktop .oculto {
       display: none; }
     .todo-el-contenido .portfolio-container-desktop .cortina {
-      -webkit-animation: fadein .2s;
-      animation: fadein .2s;
+      -webkit-animation: fadein 0.2s;
+      animation: fadein 0.2s;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-      opacity: .2;
+      opacity: 0.2;
       top: 0;
       bottom: 0;
       background: #ccc; }
@@ -298,6 +320,15 @@
       color: white; }
     .todo-el-contenido .contacto-container .redes p {
       margin: 0; }
+
+.cortina {
+  -webkit-animation: fadein 0.2s;
+  animation: fadein 0.2s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+  top: 0;
+  bottom: 0;
+  background: #ccc; }
 
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
